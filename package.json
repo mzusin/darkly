@@ -1,0 +1,64 @@
+{
+  "name": "darkly",
+  "version": "1.0.0",
+  "description": "Dark React Template + UI Kit",
+  "type": "module",
+  "main": "./dist/darkly.min.js",
+  "module": "./dist/darkly.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "node": {
+      "import": "./dist/darkly.esm-node.js",
+      "require": "./dist/darkly.node.cjs"
+    },
+    "default": "./dist/darkly.esm.js"
+  },
+  "scripts": {
+    "build:all": "npm run build:es6 & npm run build:node & npm run build:esm & npm run build:esm-node",
+    "watch:all": "npm run watch:es6 & npm run watch:node & npm run watch:esm",
+    "build:es6": "node run/es6.js",
+    "watch:es6": "node run/es6.js -- watch",
+    "build:node": "node run/node.js",
+    "watch:node": "node run/node.js -- watch",
+    "build:esm": "node run/esm.js",
+    "watch:esm": "node run/esm.js -- watch",
+    "build:esm-node": "node run/esm-node.js",
+    "watch:esm-node": "node run/esm-node.js -- watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:browser": "./node_modules/karma/bin/karma start ./karma.conf.cjs",
+    "eslint": "eslint ./src/**",
+    "typescript-declarations": "tsc --emitDeclarationOnly",
+    "docs:website": "http-server ./docs",
+    "docs:build": "node ./src/docs/generator/index.js",
+    "docs:watch": "nodemon ./src/docs/generator/index.js"
+  },
+  "keywords": [
+    "react",
+    "template",
+    "UI Kit"
+  ],
+  "author": "Miriam Zusin <miriam.zusin@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mzusin/darkly"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "verbose": false,
+    "watch": [
+      "src/"
+    ],
+    "ext": "js,json,html,css,md,ts,tsx,glsl"
+  }
+}
