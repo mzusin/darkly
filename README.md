@@ -1,5 +1,5 @@
 # ⋆⁺｡☆ Darkly ☆｡⁺⋆
-Tailwind based dark React template + UI Kit.
+Tailwind-based Dark React Template + UI Kit.
 
 
 

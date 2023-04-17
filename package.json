@@ -50,6 +50,7 @@
   "devDependencies": {
     "@types/react": "^18.0.37",
     "esbuild": "^0.17.17",
+    "markdown-documentation-maker": "^1.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
