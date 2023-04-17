@@ -8,8 +8,8 @@
   "types": "./dist/index.d.ts",
   "exports": "./dist/darkly.min.js",
   "scripts": {
-    "build": "node run/esm.js",
-    "watch": "node run/esm.js -- watch",
+    "build": "node run/main/index.js",
+    "watch": "node run/main/index.js -- watch",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:browser": "./node_modules/karma/bin/karma start ./karma.conf.cjs",
@@ -17,7 +17,9 @@
     "typescript-declarations": "tsc --emitDeclarationOnly",
     "docs:website": "http-server ./docs",
     "docs:build": "node ./src/docs/generator/index.js",
-    "docs:watch": "nodemon ./src/docs/generator/index.js"
+    "docs:watch": "nodemon ./src/docs/generator/index.js",
+    "example-1:build": "node run/example-1/index.js",
+    "example-1:watch": "node run/example-1/index.js -- watch"
   },
   "keywords": [
     "react",
@@ -49,6 +51,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "esbuild": "^0.17.17",
     "markdown-documentation-maker": "^1.0.16",
     "react": "^18.2.0",
