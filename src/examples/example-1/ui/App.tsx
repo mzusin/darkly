@@ -1,8 +1,11 @@
 import React from "react";
+import Panel from '../../../main/ui/panels/Panel';
 
 const App = () => {
     return (
-        <div className="bg-black">test</div>
+        <div>
+            <Panel />
+        </div>
     )
 };
 
