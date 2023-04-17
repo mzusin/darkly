@@ -11,7 +11,7 @@ settings.outfile = './test/browser/example-1/website.min.js';
 if(watch){
     // ------------- watch ---------------
     (async () => {
-        settings.plugins = [esbuildWatchPlugin];
+        settings.plugins.push(esbuildWatchPlugin);
         const ctx = await esbuild.context(settings);
         await ctx.watch();
         console.log('Watching...');

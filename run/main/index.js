@@ -8,7 +8,7 @@ const watch = args.length > 1 && args[1].trim().toLowerCase() === 'watch';
 if(watch){
     // ------------- watch ---------------
     (async () => {
-        settings.plugins = [esbuildWatchPlugin];
+        settings.plugins.push(esbuildWatchPlugin);
         const ctx = await esbuild.context(settings);
         await ctx.watch();
         console.log('Watching...');
