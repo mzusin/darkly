@@ -11,6 +11,8 @@ try {
 
 export const settings = {
     entryPoints: ['./src/index.ts'],
+    format: 'esm',
+    platform: 'neutral',
     bundle: true,
     sourcemap: 'linked', // external
     minify: true,
