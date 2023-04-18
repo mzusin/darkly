@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import postCssPlugin from '../esbuild-plugins/esbuild-pcss-plugin.js';
+import postCssPlugin from './esbuild-plugins/esbuild-pcss-plugin.js';
 
 const packageJson = fs.readFileSync(path.join(process.cwd(), './package.json'), 'utf-8');
 let version = '1.0.0';
@@ -11,17 +11,17 @@ try {
 } catch (ex) {}
 
 export const settings = {
-    entryPoints: ['./src/main/index.ts'],
+    // entryPoints: ['./src/main/index.ts'],
     format: 'esm',
     bundle: true,
     sourcemap: 'linked', // external
     minify: true,
     target: ['es6'],
-    outfile: './dist/darkly.min.js',
+    // outfile: './dist/darkly.min.js',
     plugins: [postCssPlugin],
     banner: {
         js: `/* 
-Darkly - Dark React Template + UI Kit
+Darkly - Dark React Starter Template + UI Kit
 Version: ${version}
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com

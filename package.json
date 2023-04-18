@@ -1,15 +1,15 @@
 {
   "name": "darkly",
   "version": "1.0.0",
-  "description": "Dark React Template + UI Kit",
+  "description": "Dark React Starter Template + UI Kit",
   "type": "module",
   "main": "./dist/darkly.min.js",
   "module": "./dist/darkly.esm.js",
   "types": "./dist/index.d.ts",
   "exports": "./dist/darkly.min.js",
   "scripts": {
-    "build": "node run/main/index.js",
-    "watch": "node run/main/index.js -- watch",
+    "template-1:build": "node run/template-1/index.js",
+    "template-1:watch": "node run/template-1/index.js -- watch",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:browser": "./node_modules/karma/bin/karma start ./karma.conf.cjs",
@@ -17,9 +17,7 @@
     "typescript-declarations": "tsc --emitDeclarationOnly",
     "docs:website": "http-server ./docs",
     "docs:build": "node ./src/docs/generator/index.js",
-    "docs:watch": "nodemon ./src/docs/generator/index.js",
-    "example-1:build": "node run/example-1/index.js",
-    "example-1:watch": "node run/example-1/index.js -- watch"
+    "docs:watch": "nodemon ./src/docs/generator/index.js"
   },
   "keywords": [
     "react",

@@ -1,5 +1,5 @@
 /* 
-Darkly - Dark React Template + UI Kit
+Darkly - Dark React Starter Template + UI Kit
 Version: 1.0.0
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com
@@ -49,4 +49,4 @@ react-dom/cjs/react-dom.production.min.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=website.min.js.map
+//# sourceMappingURL=darkly.template-1.js.map

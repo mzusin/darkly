@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './ui/App';
-import '../../main/css/index.pcss';
-import './css/index.pcss';
+import App from './templates/template-1/App';
 
 const init = () => {
     const $root =  document.getElementById('root') as HTMLElement;

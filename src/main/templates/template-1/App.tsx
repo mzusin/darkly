@@ -1,24 +1,25 @@
+import '../../css/index.pcss';
 import React from "react"
-import VIconsMenu from '../../../main/ui/menus/icons-menu/VIconsMenu';
-import Panel from '../../../main/ui/panels/Panel';
-import StretchBox from '../../../main/ui/boxes/StretchBox';
-import BottomBar from '../../../main/ui/bars/BottomBar';
-import PanelTitle from '../../../main/ui/panels/PanelTitle';
-import HSplitter from '../../../main/ui/dividers/HSplitter';
-import VIconsMenuButton from '../../../main/ui/menus/icons-menu/VIconsMenuButton';
-import VIconsMenuLogo from '../../../main/ui/menus/icons-menu/VIconsMenuLogo';
-import FramedImage from '../../../main/ui/images/FramedImage';
-import Button, { EButtonType } from '../../../main/ui/buttons/Button';
-import SideBar from '../../../main/ui/sidebar/SideBar';
-import TopBar from '../../../main/ui/bars/TopBar';
-import NumberTextBox from '../../../main/ui/form/NumberTextBox';
-import ColorPicker from '../../../main/ui/form/ColorPicker';
-import IconRadioButton from '../../../main/ui/form/icons-radio-buttons/IconRadioButton';
-import IconRadioButtonGroup from '../../../main/ui/form/icons-radio-buttons/IconRadioButtonGroup';
-import ButtonsGroup from '../../../main/ui/form/buttons-group/ButtonsGroup';
-import ButtonsGroupButton from '../../../main/ui/form/buttons-group/ButtonsGroupButton';
-import HamburgerButton from '../../../main/ui/menus/mobile-menu/HamburgerButton';
-import CloseMobileMenuButton from '../../../main/ui/menus/mobile-menu/CloseMobileMenuButton';
+import VIconsMenu from '../../ui/menus/icons-menu/VIconsMenu';
+import Panel from '../../ui/panels/Panel';
+import StretchBox from '../../ui/boxes/StretchBox';
+import BottomBar from '../../ui/bars/BottomBar';
+import PanelTitle from '../../ui/panels/PanelTitle';
+import HSplitter from '../../ui/dividers/HSplitter';
+import VIconsMenuButton from '../../ui/menus/icons-menu/VIconsMenuButton';
+import VIconsMenuLogo from '../../ui/menus/icons-menu/VIconsMenuLogo';
+import FramedImage from '../../ui/images/FramedImage';
+import Button, { EButtonType } from '../../ui/buttons/Button';
+import SideBar from '../../ui/sidebar/SideBar';
+import TopBar from '../../ui/bars/TopBar';
+import NumberTextBox from '../../ui/form/NumberTextBox';
+import ColorPicker from '../../ui/form/ColorPicker';
+import IconRadioButton from '../../ui/form/icons-radio-buttons/IconRadioButton';
+import IconRadioButtonGroup from '../../ui/form/icons-radio-buttons/IconRadioButtonGroup';
+import ButtonsGroup from '../../ui/form/buttons-group/ButtonsGroup';
+import ButtonsGroupButton from '../../ui/form/buttons-group/ButtonsGroupButton';
+import HamburgerButton from '../../ui/menus/mobile-menu/HamburgerButton';
+import CloseMobileMenuButton from '../../ui/menus/mobile-menu/CloseMobileMenuButton';
 
 const App = () => {
     return (

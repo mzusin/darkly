@@ -1,12 +1,12 @@
 import esbuild from 'esbuild';
-import { settings } from '../main/settings.js';
+import { settings } from '../settings.js';
 import esbuildWatchPlugin from '../esbuild-plugins/esbuild-watch-plugin.js';
 
 const args = process.argv.slice(2);
 const watch = args.length > 1 && args[1].trim().toLowerCase() === 'watch';
 
-settings.entryPoints = ['./src/examples/example-1/index.tsx'];
-settings.outfile = './test/browser/example-1/website.min.js';
+settings.entryPoints = ['./src/main/template-1.tsx'];
+settings.outfile = './dist/darkly.template-1.js';
 
 if(watch){
     // ------------- watch ---------------
