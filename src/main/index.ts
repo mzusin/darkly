@@ -10,3 +10,4 @@ export * from './ui/menus/icons-menu/VIconsMenuButton';
 export * from './ui/menus/icons-menu/VIconsMenuLogo';
 export * from './ui/buttons/Button';
 export * from './ui/boxes/StretchBox';
+export * from './ui/images/FramedImage';

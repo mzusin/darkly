@@ -7,12 +7,13 @@ import PanelTitle from '../../../main/ui/panels/PanelTitle';
 import HSplitter from '../../../main/ui/dividers/HSplitter';
 import VIconsMenuButton from '../../../main/ui/menus/icons-menu/VIconsMenuButton';
 import VIconsMenuLogo from '../../../main/ui/menus/icons-menu/VIconsMenuLogo';
+import FramedImage from '../../../main/ui/images/FramedImage';
 
 const App = () => {
     return (
         <div className="bg-slate-900 text-slate-200 h-full w-full flex text-base">
             <VIconsMenu>
-                <VIconsMenuLogo>
+                <VIconsMenuLogo href="/">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          width="24" height="24" viewBox="0 0 24 24" strokeWidth="3.48"
                          stroke="rgba(255, 255, 255, 1)" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -101,8 +102,10 @@ const App = () => {
 
                 <div className="flex flex-col flex-1">
 
-                    <StretchBox>
+                    <StretchBox classes="flex justify-center items-center p-4">
+                        <FramedImage width={ '500px' } height={ '270px' } classes="mx-auto max-w-full">
 
+                        </FramedImage>
                     </StretchBox>
                     <BottomBar>
 
