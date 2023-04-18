@@ -16,3 +16,4 @@ export * from './ui/sidebar/SideBar';
 export * from './ui/form/NumberTextBox';
 export * from './ui/form/icons-radio-buttons/IconRadioButton';
 export * from './ui/form/icons-radio-buttons/IconRadioButtonGroup';
+export * from './ui/form/buttons-group/ButtonsGroup';

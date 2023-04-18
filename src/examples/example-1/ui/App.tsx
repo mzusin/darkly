@@ -15,6 +15,8 @@ import NumberTextBox from '../../../main/ui/form/NumberTextBox';
 import ColorPicker from '../../../main/ui/form/ColorPicker';
 import IconRadioButton from '../../../main/ui/form/icons-radio-buttons/IconRadioButton';
 import IconRadioButtonGroup from '../../../main/ui/form/icons-radio-buttons/IconRadioButtonGroup';
+import ButtonsGroup from '../../../main/ui/form/buttons-group/ButtonsGroup';
+import ButtonsGroupButton from '../../../main/ui/form/buttons-group/ButtonsGroupButton';
 
 const App = () => {
     return (
@@ -152,6 +154,17 @@ const App = () => {
                             </svg>
                         </IconRadioButton>
                     </IconRadioButtonGroup>
+
+                    <NumberTextBox classes="m-4" width="100px">
+                        Duration
+                    </NumberTextBox>
+
+                    <ButtonsGroup>
+                        <ButtonsGroupButton>SVG</ButtonsGroupButton>
+                        <ButtonsGroupButton>PNG</ButtonsGroupButton>
+                        <ButtonsGroupButton>JPG</ButtonsGroupButton>
+                        <ButtonsGroupButton>GIF</ButtonsGroupButton>
+                    </ButtonsGroup>
                 </Panel>
 
                 <div className="flex flex-col flex-1">
