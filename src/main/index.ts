@@ -1,7 +1,8 @@
 import './css/index.pcss';
 
 export * from './ui/dividers/HSplitter';
-export * from './ui/boxes/BottomBar';
+export * from './ui/bars/BottomBar';
+export * from './ui/bars/TopBar';
 export * from './ui/panels/Panel';
 export * from './ui/panels/PanelSection';
 export * from './ui/panels/PanelTitle';

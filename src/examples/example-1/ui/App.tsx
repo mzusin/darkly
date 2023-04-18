@@ -2,7 +2,7 @@ import React from "react"
 import VIconsMenu from '../../../main/ui/menus/icons-menu/VIconsMenu';
 import Panel from '../../../main/ui/panels/Panel';
 import StretchBox from '../../../main/ui/boxes/StretchBox';
-import BottomBar from '../../../main/ui/boxes/BottomBar';
+import BottomBar from '../../../main/ui/bars/BottomBar';
 import PanelTitle from '../../../main/ui/panels/PanelTitle';
 import HSplitter from '../../../main/ui/dividers/HSplitter';
 import VIconsMenuButton from '../../../main/ui/menus/icons-menu/VIconsMenuButton';
@@ -10,6 +10,7 @@ import VIconsMenuLogo from '../../../main/ui/menus/icons-menu/VIconsMenuLogo';
 import FramedImage from '../../../main/ui/images/FramedImage';
 import Button, { EButtonType } from '../../../main/ui/buttons/Button';
 import SideBar from '../../../main/ui/sidebar/SideBar';
+import TopBar from '../../../main/ui/bars/TopBar';
 
 const App = () => {
     return (
@@ -103,6 +104,15 @@ const App = () => {
                 </Panel>
 
                 <div className="flex flex-col flex-1">
+
+                    <TopBar classes="text-center justify-center">
+                        <p className="text-center p-2 text-sm text-slate-300">
+                            🤩 If you like this project, please support us by starring our &nbsp;
+                            <a target="_blank"
+                                 rel="noopener noreferrer"
+                                 href="https://github.com/mzusin/darkly"
+                                 className="underline">GitHub repository</a> 🤩</p>
+                    </TopBar>
 
                     <StretchBox classes="flex justify-center items-center p-4">
                         <FramedImage width={ '500px' } height={ '270px' } classes="mx-auto max-w-full">
