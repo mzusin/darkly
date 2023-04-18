@@ -33,6 +33,8 @@ const esbuildPostCssPlugin = {
 
             if(args.path.indexOf('/examples/example-1') !== -1){
                 tailwindSettings.content = [
+                    './src/main/**/*.ts',
+                    './src/main/**/*.tsx',
                     './src/examples/example-1/**/*.html',
                     './src/examples/example-1/**/*.tsx',
                     './src/examples/example-1/**/*.ts',

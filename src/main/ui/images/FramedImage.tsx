@@ -16,7 +16,7 @@ const FramedImage = (props: IFramedImage) => {
     };
 
     return (
-        <section className={ `bg-black border-4 border-slate-600 ${ classes || '' }` } style={ style }>
+        <section className={ `bg-black border-4 border-slate-600 max-w-full ${ classes || '' }` } style={ style }>
             { children }
         </section>
     )
