@@ -41,9 +41,9 @@ const Button = (props: IButton) => {
     const { children, classes, type } = props;
 
     return (
-        <section className={ `${ getButtonClasses(type) } ${ classes || '' }` }>
+        <button type="button" className={ `${ getButtonClasses(type) } ${ classes || '' }` }>
             { children }
-        </section>
+        </button>
     )
 };
 

@@ -17,24 +17,32 @@ import IconRadioButton from '../../../main/ui/form/icons-radio-buttons/IconRadio
 import IconRadioButtonGroup from '../../../main/ui/form/icons-radio-buttons/IconRadioButtonGroup';
 import ButtonsGroup from '../../../main/ui/form/buttons-group/ButtonsGroup';
 import ButtonsGroupButton from '../../../main/ui/form/buttons-group/ButtonsGroupButton';
+import HamburgerButton from '../../../main/ui/menus/mobile-menu/HamburgerButton';
 
 const App = () => {
     return (
         <div className="bg-slate-900 text-slate-200 h-screen w-full flex text-base">
+
             <VIconsMenu>
-                <VIconsMenuLogo href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24" viewBox="0 0 24 24" strokeWidth="3.48"
-                         stroke="rgba(255, 255, 255, 1)" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <circle cx="50%" cy="50%" r="50%" stroke="none" strokeWidth="0" fill="rgba(40, 95, 104, 1)"/>
-                        <g transform="translate(3.36, 3.36) scale(0.72)">
-                            <g transform="rotate(25.2 12 12)">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M6 20v-16l6 14l6 -14v16"/>
+
+                <div className="flex">
+                    <HamburgerButton />
+
+                    <VIconsMenuLogo href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="24" height="24" viewBox="0 0 24 24" strokeWidth="3.48"
+                             stroke="rgba(255, 255, 255, 1)" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <circle cx="50%" cy="50%" r="50%" stroke="none" strokeWidth="0" fill="rgba(40, 95, 104, 1)"/>
+                            <g transform="translate(3.36, 3.36) scale(0.72)">
+                                <g transform="rotate(25.2 12 12)">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M6 20v-16l6 14l6 -14v16"/>
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                </VIconsMenuLogo>
+                        </svg>
+                    </VIconsMenuLogo>
+                </div>
+
                 <HSplitter classes="mb-4" />
 
                 <VIconsMenuButton title="Image Size" selected={ true }>
@@ -102,8 +110,7 @@ const App = () => {
                 </VIconsMenuButton>
             </VIconsMenu>
 
-            <div className="flex flex-1 w-full">
-
+            <div className="darkly-main flex flex-1">
                 <Panel>
                     <PanelTitle>Stripes</PanelTitle>
                     <HSplitter />

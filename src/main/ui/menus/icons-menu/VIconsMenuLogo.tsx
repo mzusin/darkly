@@ -14,7 +14,7 @@ const VIconsMenuLogo = (props: IVIconsMenuLogo) => {
         <a
             href={ href }
             title={ title }
-            className={ `flex justify-center items-center w-full px-4 py-3 transition-transform hover:scale-125 ${ classes || '' }` }>
+            className={ `hidden xl:flex justify-center items-center w-full px-4 py-3 transition-transform hover:scale-125 ${ classes || '' }` }>
             { children }
         </a>
     )

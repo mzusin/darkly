@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './ui/App';
-// import '../../../dist/darkly.min.css';
+import '../../main/css/index.pcss';
 import './css/index.pcss';
 
 const init = () => {
