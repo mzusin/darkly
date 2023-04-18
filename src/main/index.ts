@@ -1,6 +1,6 @@
 import './css/index.pcss';
 
-export * from './ui/Splitter';
+export * from './ui/dividers/HSplitter';
 export * from './ui/boxes/BottomBar';
 export * from './ui/panels/Panel';
 export * from './ui/panels/PanelSection';

@@ -1,9 +1,17 @@
 import React from 'react';
 
-const PanelTitle = () => {
-    return (
-        <section>
+interface IPanelTitle {
+    classes?: string;
+    children?: React.ReactNode;
+}
 
+const PanelTitle = (props: IPanelTitle) => {
+
+    const { classes, children } = props;
+
+    return (
+        <section className={ `w-full text-center px-6 py-3 ${ classes }` }>
+            { children }
         </section>
     )
 };
