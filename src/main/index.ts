@@ -13,3 +13,4 @@ export * from './ui/buttons/Button';
 export * from './ui/boxes/StretchBox';
 export * from './ui/images/FramedImage';
 export * from './ui/sidebar/SideBar';
+export * from './ui/form/NumberTextBox';

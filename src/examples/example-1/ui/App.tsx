@@ -11,6 +11,7 @@ import FramedImage from '../../../main/ui/images/FramedImage';
 import Button, { EButtonType } from '../../../main/ui/buttons/Button';
 import SideBar from '../../../main/ui/sidebar/SideBar';
 import TopBar from '../../../main/ui/bars/TopBar';
+import NumberTextBox from '../../../main/ui/form/NumberTextBox';
 
 const App = () => {
     return (
@@ -101,6 +102,18 @@ const App = () => {
                 <Panel>
                     <PanelTitle>Stripes</PanelTitle>
                     <HSplitter />
+
+                    <NumberTextBox classes="mx-4 my-4" width="100px">
+                        Size
+                    </NumberTextBox>
+
+                    <NumberTextBox classes="mx-4 my-4" width="100px">
+                        Size
+                    </NumberTextBox>
+
+                    <NumberTextBox classes="mx-4 my-4" width="100px">
+                        Size
+                    </NumberTextBox>
                 </Panel>
 
                 <div className="flex flex-col flex-1">
