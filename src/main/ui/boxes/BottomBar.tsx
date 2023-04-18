@@ -1,18 +1,18 @@
 import React from 'react';
 
-interface IVMenuBar {
+interface IBottomBar {
     children?: React.ReactNode;
     classes?: string;
 }
 
-const VMenuBar = (props: IVMenuBar) => {
+const BottomBar = (props: IBottomBar) => {
     const { children, classes } = props;
 
     return (
-        <section className={ `w-16 h-full bg-slate-800 border-r border-black ${ classes || '' }` }>
+        <section className={ `bg-slate-800 h-16 border-l border-black ${ classes || '' }` }>
             { children }
         </section>
     )
 };
 
-export default VMenuBar;
+export default BottomBar;

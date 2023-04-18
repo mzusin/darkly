@@ -1,5 +1,9 @@
 # ⋆⁺｡☆ Darkly ☆｡⁺⋆
-Tailwind-based Dark React Template + UI Kit.
+Dark React Template + UI Kit.
+
+## Features
+- Responsive
+- Based on [Tailwind CSS framework](https://tailwindcss.com/).
 
 
 
