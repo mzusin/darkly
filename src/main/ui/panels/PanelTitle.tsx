@@ -10,7 +10,7 @@ const PanelTitle = (props: IPanelTitle) => {
     const { classes, children } = props;
 
     return (
-        <section className={ `w-full text-center px-6 py-3 ${ classes }` }>
+        <section className={ `relative w-full text-center px-6 py-3 ${ classes }` }>
             { children }
         </section>
     )

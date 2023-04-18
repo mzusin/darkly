@@ -18,6 +18,7 @@ import IconRadioButtonGroup from '../../../main/ui/form/icons-radio-buttons/Icon
 import ButtonsGroup from '../../../main/ui/form/buttons-group/ButtonsGroup';
 import ButtonsGroupButton from '../../../main/ui/form/buttons-group/ButtonsGroupButton';
 import HamburgerButton from '../../../main/ui/menus/mobile-menu/HamburgerButton';
+import CloseMobileMenuButton from '../../../main/ui/menus/mobile-menu/CloseMobileMenuButton';
 
 const App = () => {
     return (
@@ -112,7 +113,10 @@ const App = () => {
 
             <div className="darkly-main flex flex-1">
                 <Panel slideOnMobile={ true }>
-                    <PanelTitle>Stripes</PanelTitle>
+                    <PanelTitle>
+                        Stripes
+                        <CloseMobileMenuButton />
+                    </PanelTitle>
                     <HSplitter />
 
                     <NumberTextBox classes="m-4" width="100px">
