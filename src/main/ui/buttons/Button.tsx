@@ -15,7 +15,7 @@ interface IButton {
 
 const getButtonClasses = (type?: EButtonType) => {
 
-    const btn = `cursor-pointer mx-2 rounded-full px-8 py-2 transition-colors flex items-center justify-center`;
+    const btn = `cursor-pointer mx-2 rounded-full px-8 py-1.5 transition-colors flex items-center justify-center`;
 
     switch(type){
 

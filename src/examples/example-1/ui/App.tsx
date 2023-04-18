@@ -9,6 +9,7 @@ import VIconsMenuButton from '../../../main/ui/menus/icons-menu/VIconsMenuButton
 import VIconsMenuLogo from '../../../main/ui/menus/icons-menu/VIconsMenuLogo';
 import FramedImage from '../../../main/ui/images/FramedImage';
 import Button, { EButtonType } from '../../../main/ui/buttons/Button';
+import SideBar from '../../../main/ui/sidebar/SideBar';
 
 const App = () => {
     return (
@@ -134,6 +135,10 @@ const App = () => {
                     </BottomBar>
                 </div>
             </div>
+
+            <SideBar>
+
+            </SideBar>
 
         </div>
     )

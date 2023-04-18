@@ -11,3 +11,4 @@ export * from './ui/menus/icons-menu/VIconsMenuLogo';
 export * from './ui/buttons/Button';
 export * from './ui/boxes/StretchBox';
 export * from './ui/images/FramedImage';
+export * from './ui/sidebar/SideBar';
