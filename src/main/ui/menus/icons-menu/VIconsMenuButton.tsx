@@ -14,7 +14,7 @@ const VIconsMenuButton = (props: IVIconsMenuButton) => {
         <button
             type="button"
             title={ title }
-            className={ `pointer p-4 mb-1 transition-colors hover:bg-slate-900 rounded ${ selected ? 'bg-slate-900' : '' } ${ classes || '' }` }>
+            className={ `cursor-pointer p-4 mb-1 transition-colors hover:bg-slate-900 rounded ${ selected ? 'bg-slate-900' : '' } ${ classes || '' }` }>
             { children }
         </button>
     )

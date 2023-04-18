@@ -12,6 +12,9 @@ import Button, { EButtonType } from '../../../main/ui/buttons/Button';
 import SideBar from '../../../main/ui/sidebar/SideBar';
 import TopBar from '../../../main/ui/bars/TopBar';
 import NumberTextBox from '../../../main/ui/form/NumberTextBox';
+import ColorPicker from '../../../main/ui/form/ColorPicker';
+import IconRadioButton from '../../../main/ui/form/icons-radio-buttons/IconRadioButton';
+import IconRadioButtonGroup from '../../../main/ui/form/icons-radio-buttons/IconRadioButtonGroup';
 
 const App = () => {
     return (
@@ -103,17 +106,52 @@ const App = () => {
                     <PanelTitle>Stripes</PanelTitle>
                     <HSplitter />
 
-                    <NumberTextBox classes="mx-4 my-4" width="100px">
+                    <NumberTextBox classes="m-4" width="100px">
                         Size
                     </NumberTextBox>
 
-                    <NumberTextBox classes="mx-4 my-4" width="100px">
-                        Size
-                    </NumberTextBox>
+                    <ColorPicker classes="m-4" width="100px">
+                        Color
+                    </ColorPicker>
 
-                    <NumberTextBox classes="mx-4 my-4" width="100px">
-                        Size
-                    </NumberTextBox>
+                    <IconRadioButtonGroup>
+                        <IconRadioButton groupName="animation" title="Linear Animation" checked={ true }>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round"
+                                 width="20px" height="20px"
+                                 strokeLinejoin="round" strokeWidth="1.5"
+                                 viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M14 3 3 14m0-4v4h4m10-4h4v4m-11 7 11-11"/>
+                            </svg>
+                        </IconRadioButton>
+
+                        <IconRadioButton groupName="animation" title="Clockwise Rotation">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                 strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                                 width="20px" height="20px" viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5"/>
+                            </svg>
+                        </IconRadioButton>
+
+                        <IconRadioButton groupName="animation" title="Counter Clockwise Rotation">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                 strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                                 width="20px" height="20px" viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M19.95 11a8 8 0 1 0-.5 4m.5 5v-5h-5"/>
+                            </svg>
+                        </IconRadioButton>
+
+                        <IconRadioButton groupName="animation" title="No Animation">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                 strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                                 width="20px" height="20px" viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0m6 3 6-6"/>
+                            </svg>
+                        </IconRadioButton>
+                    </IconRadioButtonGroup>
                 </Panel>
 
                 <div className="flex flex-col flex-1">

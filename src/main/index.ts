@@ -14,3 +14,5 @@ export * from './ui/boxes/StretchBox';
 export * from './ui/images/FramedImage';
 export * from './ui/sidebar/SideBar';
 export * from './ui/form/NumberTextBox';
+export * from './ui/form/icons-radio-buttons/IconRadioButton';
+export * from './ui/form/icons-radio-buttons/IconRadioButtonGroup';
