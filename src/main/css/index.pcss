@@ -14,6 +14,20 @@
     .darkly-main{
         width: calc(100% - 4rem);
     }
+
+    /**
+     * Mobile Menu.
+     */
+    .darkly-slide-m-panel{
+        left: -100%;
+        transition: left .5s ease;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .darkly-show-m-menu .darkly-slide-m-panel{
+        left: 4rem;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference){

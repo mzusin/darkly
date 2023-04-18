@@ -111,7 +111,7 @@ const App = () => {
             </VIconsMenu>
 
             <div className="darkly-main flex flex-1">
-                <Panel>
+                <Panel slideOnMobile={ true }>
                     <PanelTitle>Stripes</PanelTitle>
                     <HSplitter />
 
