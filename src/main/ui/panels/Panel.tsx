@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 
 interface IPanel {
     children?: React.ReactNode;
@@ -9,8 +9,15 @@ interface IPanel {
 const Panel = (props: IPanel) => {
     const { children, classes, slideOnMobile } = props;
 
+    const onClick = (evt: MouseEvent) => {
+        if(!slideOnMobile) return;
+        evt.stopPropagation();
+    };
+
     return (
-        <section className={ `${ slideOnMobile ? 'darkly-slide-m-panel' : 'hidden' } xl:block xl:static w-80 max-w-full h-screen bg-slate-800 ${ classes || '' }` }>
+        <section
+            onClick={ onClick }
+            className={ `${ slideOnMobile ? 'darkly-slide-m-panel' : 'hidden' } xl:block xl:static w-80 max-w-full h-screen bg-slate-800 ${ classes || '' }` }>
             { children }
         </section>
     )

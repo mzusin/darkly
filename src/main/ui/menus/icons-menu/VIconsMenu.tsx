@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 
 interface IVIconsMenu {
     children?: React.ReactNode;
@@ -8,8 +8,14 @@ interface IVIconsMenu {
 const VIconsMenu = (props: IVIconsMenu) => {
     const { children, classes } = props;
 
+    const onClick = (evt: MouseEvent) => {
+        evt.stopPropagation();
+    };
+
     return (
-        <section className={ `relative z-20 flex flex-col items-center w-16 basis-16 h-screen bg-slate-800 border-r border-black overflow-hidden ${ classes || '' }` }>
+        <section
+            onClick={ onClick }
+            className={ `relative z-20 flex flex-col items-center w-16 basis-16 h-screen bg-slate-800 border-r border-black overflow-hidden ${ classes || '' }` }>
             { children }
         </section>
     )

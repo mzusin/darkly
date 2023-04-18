@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { closeMobileMenu, toggleMobileMenu } from '../../../domain/mobile-menu-provider';
 
 interface IHamburgerButton {
     classes?: string;
@@ -7,14 +8,18 @@ interface IHamburgerButton {
 const HamburgerButton = (props: IHamburgerButton) => {
     const { classes } = props;
 
-    const onClick = () => {
-        document.body.classList.toggle('darkly-show-m-menu');
-    };
+    useEffect(() => {
+        document.addEventListener('click', closeMobileMenu);
+
+        return () => {
+            document.removeEventListener('click', closeMobileMenu);
+        };
+    }, []);
 
     return (
         <button
             type="button"
-            onClick={ onClick }
+            onClick={ toggleMobileMenu }
             className={ `block xl:hidden justify-center items-center w-full px-4 py-3 ${ classes || '' }` }>
 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round"
