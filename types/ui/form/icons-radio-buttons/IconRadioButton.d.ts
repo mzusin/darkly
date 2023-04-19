@@ -1,5 +1,5 @@
 import React from 'react';
-interface IIconRadioButton {
+export interface IIconRadioButton {
     groupName: string;
     children?: React.ReactNode;
     classes?: string;
@@ -7,4 +7,3 @@ interface IIconRadioButton {
     checked?: boolean;
 }
 export declare const IconRadioButton: (props: IIconRadioButton) => JSX.Element;
-export {};

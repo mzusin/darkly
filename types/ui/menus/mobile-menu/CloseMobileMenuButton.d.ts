@@ -1,6 +1,5 @@
 /// <reference types="react" />
-interface ICloseMobileMenuButton {
+export interface ICloseMobileMenuButton {
     classes?: string;
 }
 export declare const CloseMobileMenuButton: (props: ICloseMobileMenuButton) => JSX.Element;
-export {};
