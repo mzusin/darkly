@@ -6,7 +6,7 @@ interface IColorPicker {
     width?: string|number;
 }
 
-const ColorPicker = (props: IColorPicker) => {
+export const ColorPicker = (props: IColorPicker) => {
     const { children, classes, width } = props;
 
     const style = {
@@ -28,5 +28,3 @@ const ColorPicker = (props: IColorPicker) => {
         </section>
     )
 };
-
-export default ColorPicker;

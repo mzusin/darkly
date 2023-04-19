@@ -5,7 +5,7 @@ interface ITopBar {
     classes?: string;
 }
 
-const TopBar = (props: ITopBar) => {
+export const TopBar = (props: ITopBar) => {
     const { children, classes } = props;
 
     return (
@@ -14,5 +14,3 @@ const TopBar = (props: ITopBar) => {
         </section>
     )
 };
-
-export default TopBar;

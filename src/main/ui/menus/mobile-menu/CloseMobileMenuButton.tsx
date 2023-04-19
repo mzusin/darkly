@@ -5,7 +5,7 @@ interface ICloseMobileMenuButton {
     classes?: string;
 }
 
-const CloseMobileMenuButton = (props: ICloseMobileMenuButton) => {
+export const CloseMobileMenuButton = (props: ICloseMobileMenuButton) => {
 
     const { classes } = props;
 
@@ -25,5 +25,3 @@ const CloseMobileMenuButton = (props: ICloseMobileMenuButton) => {
         </button>
     )
 };
-
-export default CloseMobileMenuButton;

@@ -6,7 +6,7 @@ interface IPanel {
     slideOnMobile?: boolean;
 }
 
-const Panel = (props: IPanel) => {
+export const Panel = (props: IPanel) => {
     const { children, classes, slideOnMobile } = props;
 
     const onClick = (evt: MouseEvent) => {
@@ -22,5 +22,3 @@ const Panel = (props: IPanel) => {
         </section>
     )
 };
-
-export default Panel;

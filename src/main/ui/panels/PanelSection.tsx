@@ -1,11 +1,9 @@
 import React from 'react';
 
-const PanelSection = () => {
+export const PanelSection = () => {
     return (
         <section>
 
         </section>
     )
 };
-
-export default PanelSection;

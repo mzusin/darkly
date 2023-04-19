@@ -37,7 +37,7 @@ const getButtonClasses = (type?: EButtonType) => {
     }
 };
 
-const Button = (props: IButton) => {
+export const Button = (props: IButton) => {
     const { children, classes, type } = props;
 
     return (
@@ -46,5 +46,3 @@ const Button = (props: IButton) => {
         </button>
     )
 };
-
-export default Button;

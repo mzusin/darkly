@@ -5,7 +5,7 @@ interface IIconRadioButtonGroup {
     classes?: string;
 }
 
-const IconRadioButtonGroup = (props: IIconRadioButtonGroup) => {
+export const IconRadioButtonGroup = (props: IIconRadioButtonGroup) => {
     const { children, classes } = props;
     
     return (
@@ -14,5 +14,3 @@ const IconRadioButtonGroup = (props: IIconRadioButtonGroup) => {
         </section>
     )
 };
-
-export default IconRadioButtonGroup;

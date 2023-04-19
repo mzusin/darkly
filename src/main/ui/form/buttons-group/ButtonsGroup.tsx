@@ -5,7 +5,7 @@ interface IButtonsGroup {
     classes?: string;
 }
 
-const ButtonsGroup = (props: IButtonsGroup) => {
+export const ButtonsGroup = (props: IButtonsGroup) => {
     const { children, classes } = props;
     
     return (
@@ -14,5 +14,3 @@ const ButtonsGroup = (props: IButtonsGroup) => {
         </section>
     )
 };
-
-export default ButtonsGroup;

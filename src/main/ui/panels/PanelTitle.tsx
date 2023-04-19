@@ -5,7 +5,7 @@ interface IPanelTitle {
     children?: React.ReactNode;
 }
 
-const PanelTitle = (props: IPanelTitle) => {
+export const PanelTitle = (props: IPanelTitle) => {
 
     const { classes, children } = props;
 
@@ -15,5 +15,3 @@ const PanelTitle = (props: IPanelTitle) => {
         </section>
     )
 };
-
-export default PanelTitle;

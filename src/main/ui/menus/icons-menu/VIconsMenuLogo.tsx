@@ -7,7 +7,7 @@ interface IVIconsMenuLogo {
     title?: string;
 }
 
-const VIconsMenuLogo = (props: IVIconsMenuLogo) => {
+export const VIconsMenuLogo = (props: IVIconsMenuLogo) => {
     const { children, classes, href, title } = props;
 
     return (
@@ -19,5 +19,3 @@ const VIconsMenuLogo = (props: IVIconsMenuLogo) => {
         </a>
     )
 };
-
-export default VIconsMenuLogo;

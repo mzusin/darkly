@@ -7,7 +7,7 @@ interface IButtonsGroupButton {
     selected?: boolean;
 }
 
-const ButtonsGroupButton = (props: IButtonsGroupButton) => {
+export const ButtonsGroupButton = (props: IButtonsGroupButton) => {
     const { children, classes, title, selected } = props;
 
     const selectedClasses = selected ? 'bg-sky-800' : 'bg-slate-900';
@@ -21,5 +21,3 @@ const ButtonsGroupButton = (props: IButtonsGroupButton) => {
         </button>
     )
 };
-
-export default ButtonsGroupButton;

@@ -8,7 +8,7 @@ interface IIconRadioButton {
     checked?: boolean;
 }
 
-const IconRadioButton = (props: IIconRadioButton) => {
+export const IconRadioButton = (props: IIconRadioButton) => {
     const { children, classes, groupName, title, checked } = props;
 
     const checkedClasses = checked ? 'bg-sky-800' : 'bg-slate-900';
@@ -27,5 +27,3 @@ const IconRadioButton = (props: IIconRadioButton) => {
         </label>
     )
 };
-
-export default IconRadioButton;

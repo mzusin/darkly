@@ -5,7 +5,7 @@ interface IBottomBar {
     classes?: string;
 }
 
-const BottomBar = (props: IBottomBar) => {
+export const BottomBar = (props: IBottomBar) => {
     const { children, classes } = props;
 
     return (
@@ -14,5 +14,3 @@ const BottomBar = (props: IBottomBar) => {
         </section>
     )
 };
-
-export default BottomBar;

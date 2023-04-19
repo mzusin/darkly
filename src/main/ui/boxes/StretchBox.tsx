@@ -5,7 +5,7 @@ interface IStretchBox {
     classes?: string;
 }
 
-const StretchBox = (props: IStretchBox) => {
+export const StretchBox = (props: IStretchBox) => {
     const { children, classes } = props;
 
     return (
@@ -14,5 +14,3 @@ const StretchBox = (props: IStretchBox) => {
         </section>
     )
 };
-
-export default StretchBox;

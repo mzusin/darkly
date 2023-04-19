@@ -1,0 +1,45 @@
+import { BottomBar } from '../types/ui/bars/BottomBar';
+import { TopBar } from '../types/ui/bars/TopBar';
+import { StretchBox } from '../types/ui/boxes/StretchBox';
+import { Button } from '../types/ui/buttons/StretchBox';
+import { HSplitter } from '../types/ui/dividers/HSplitter';
+import { ButtonsGroup } from '../types/ui/form/buttons-group/ButtonsGroup';
+import { ButtonsGroupButton } from '../types/ui/form/buttons-group/ButtonsGroupButton';
+import { IconRadioButton } from '../types/ui/form/icons-radio-buttons/IconRadioButton';
+import { IconRadioButtonGroup } from '../types/ui/form/icons-radio-buttons/IconRadioButtonGroup';
+import { ColorPicker } from '../types/ui/form/ColorPicker';
+import { NumberTextBox } from '../types/ui/form/NumberTextBox';
+import { FramedImage } from '../types/ui/images/FramedImage';
+import { VIconsMenu } from '../types/ui/menus/icons-menu/VIconsMenu';
+import { VIconsMenuButton } from '../types/ui/menus/icons-menu/VIconsMenuButton';
+import { VIconsMenuLogo } from '../types/ui/menus/icons-menu/VIconsMenuLogo';
+import { CloseMobileMenuButton } from '../types/ui/menus/mobile-menu/CloseMobileMenuButton';
+import { HamburgerButton } from '../types/ui/menus/mobile-menu/HamburgerButton';
+import { Panel } from '../types/ui/panels/Panel';
+import { PanelSection } from '../types/ui/panels/PanelSection';
+import { PanelTitle } from '../types/ui/panels/PanelTitle';
+import { SideBar } from '../types/ui/sidebar/SideBar';
+
+declare module 'darkly' {
+    export const BottomBar;
+    export const TopBar;
+    export const StretchBox;
+    export const Button;
+    export const HSplitter;
+    export const ButtonsGroup;
+    export const ButtonsGroupButton;
+    export const IconRadioButton;
+    export const IconRadioButtonGroup;
+    export const ColorPicker;
+    export const NumberTextBox;
+    export const FramedImage;
+    export const VIconsMenu;
+    export const VIconsMenuButton;
+    export const VIconsMenuLogo;
+    export const CloseMobileMenuButton;
+    export const HamburgerButton;
+    export const Panel;
+    export const PanelSection;
+    export const PanelTitle;
+    export const SideBar;
+}

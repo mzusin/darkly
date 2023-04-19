@@ -4,7 +4,7 @@ interface IHSplitter {
     classes?: string;
 }
 
-const HSplitter = (props: IHSplitter) => {
+export const HSplitter = (props: IHSplitter) => {
 
     const { classes } = props;
 
@@ -22,5 +22,3 @@ const HSplitter = (props: IHSplitter) => {
         </section>
     )
 };
-
-export default HSplitter;

@@ -5,7 +5,7 @@ interface ISideBar {
     classes?: string;
 }
 
-const SideBar = (props: ISideBar) => {
+export const SideBar = (props: ISideBar) => {
     const { children, classes } = props;
 
     return (
@@ -14,5 +14,3 @@ const SideBar = (props: ISideBar) => {
         </section>
     )
 };
-
-export default SideBar;

@@ -7,7 +7,7 @@ interface IVIconsMenuButton {
     selected?: boolean;
 }
 
-const VIconsMenuButton = (props: IVIconsMenuButton) => {
+export const VIconsMenuButton = (props: IVIconsMenuButton) => {
     const { children, classes, title, selected } = props;
 
     return (
@@ -19,5 +19,3 @@ const VIconsMenuButton = (props: IVIconsMenuButton) => {
         </button>
     )
 };
-
-export default VIconsMenuButton;

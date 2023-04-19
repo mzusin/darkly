@@ -5,7 +5,7 @@ interface IVIconsMenu {
     classes?: string;
 }
 
-const VIconsMenu = (props: IVIconsMenu) => {
+export const VIconsMenu = (props: IVIconsMenu) => {
     const { children, classes } = props;
 
     const onClick = (evt: MouseEvent) => {
@@ -20,5 +20,3 @@ const VIconsMenu = (props: IVIconsMenu) => {
         </section>
     )
 };
-
-export default VIconsMenu;

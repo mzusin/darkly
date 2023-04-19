@@ -6,7 +6,7 @@ interface INumberTextBox {
     width?: string|number;
 }
 
-const NumberTextBox = (props: INumberTextBox) => {
+export const NumberTextBox = (props: INumberTextBox) => {
     const { children, classes, width } = props;
 
     const style = {
@@ -28,5 +28,3 @@ const NumberTextBox = (props: INumberTextBox) => {
         </section>
     )
 };
-
-export default NumberTextBox;

@@ -1,9 +1,9 @@
 import '../../css/index.pcss';
-import React from "react"
+import React from 'react';
 import VIconsMenu from '../../ui/menus/icons-menu/VIconsMenu';
 import Panel from '../../ui/panels/Panel';
 import StretchBox from '../../ui/boxes/StretchBox';
-import BottomBar from '../../ui/bars/BottomBar';
+import { BottomBar } from '../../ui/bars/BottomBar';
 import PanelTitle from '../../ui/panels/PanelTitle';
 import HSplitter from '../../ui/dividers/HSplitter';
 import VIconsMenuButton from '../../ui/menus/icons-menu/VIconsMenuButton';

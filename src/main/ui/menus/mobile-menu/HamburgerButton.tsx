@@ -5,7 +5,7 @@ interface IHamburgerButton {
     classes?: string;
 }
 
-const HamburgerButton = (props: IHamburgerButton) => {
+export const HamburgerButton = (props: IHamburgerButton) => {
     const { classes } = props;
 
     useEffect(() => {
@@ -33,5 +33,3 @@ const HamburgerButton = (props: IHamburgerButton) => {
         </button>
     )
 };
-
-export default HamburgerButton;

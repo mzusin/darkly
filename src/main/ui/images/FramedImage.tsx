@@ -7,7 +7,7 @@ interface IFramedImage {
     height?: string|number;
 }
 
-const FramedImage = (props: IFramedImage) => {
+export const FramedImage = (props: IFramedImage) => {
     const { children, classes, width, height } = props;
 
     const style = {
@@ -21,5 +21,3 @@ const FramedImage = (props: IFramedImage) => {
         </section>
     )
 };
-
-export default FramedImage;
