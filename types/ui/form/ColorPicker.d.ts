@@ -4,5 +4,5 @@ interface IColorPicker {
     classes?: string;
     width?: string | number;
 }
-declare const ColorPicker: (props: IColorPicker) => JSX.Element;
-export default ColorPicker;
+export declare const ColorPicker: (props: IColorPicker) => JSX.Element;
+export {};

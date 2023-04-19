@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IIconRadioButtonGroup {
+export interface IIconRadioButtonGroup {
     children?: React.ReactNode;
     classes?: string;
 }

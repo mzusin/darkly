@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IPanelTitle {
+export interface IPanelTitle {
     classes?: string;
     children?: React.ReactNode;
 }

@@ -1,3 +1,2 @@
 /// <reference types="react" />
-declare const PanelSection: () => JSX.Element;
-export default PanelSection;
+export declare const PanelSection: () => JSX.Element;

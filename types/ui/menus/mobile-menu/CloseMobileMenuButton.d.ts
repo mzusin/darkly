@@ -2,5 +2,5 @@
 interface ICloseMobileMenuButton {
     classes?: string;
 }
-declare const CloseMobileMenuButton: (props: ICloseMobileMenuButton) => JSX.Element;
-export default CloseMobileMenuButton;
+export declare const CloseMobileMenuButton: (props: ICloseMobileMenuButton) => JSX.Element;
+export {};

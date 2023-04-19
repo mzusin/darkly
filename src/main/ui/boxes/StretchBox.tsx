@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IStretchBox {
+export interface IStretchBox {
     children?: React.ReactNode;
     classes?: string;
 }

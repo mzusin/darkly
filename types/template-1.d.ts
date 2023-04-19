@@ -1,1 +1,1 @@
-export * from './ui/bars/BottomBar';
+export {};

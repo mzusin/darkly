@@ -1,7 +1,7 @@
 import React from 'react';
 import { closeMobileMenu } from '../../../domain/mobile-menu-provider';
 
-interface ICloseMobileMenuButton {
+export interface ICloseMobileMenuButton {
     classes?: string;
 }
 

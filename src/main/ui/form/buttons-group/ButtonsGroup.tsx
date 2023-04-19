@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IButtonsGroup {
+export interface IButtonsGroup {
     children?: React.ReactNode;
     classes?: string;
 }

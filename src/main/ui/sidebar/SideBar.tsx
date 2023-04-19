@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ISideBar {
+export interface ISideBar {
     children?: React.ReactNode;
     classes?: string;
 }

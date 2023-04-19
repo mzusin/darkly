@@ -7,7 +7,7 @@ export enum EButtonType {
     OutlineSecondary = 4,
 }
 
-interface IButton {
+export interface IButton {
     children?: React.ReactNode;
     classes?: string;
     type?: EButtonType;

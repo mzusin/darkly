@@ -5,5 +5,5 @@ interface IVIconsMenuButton {
     title?: string;
     selected?: boolean;
 }
-declare const VIconsMenuButton: (props: IVIconsMenuButton) => JSX.Element;
-export default VIconsMenuButton;
+export declare const VIconsMenuButton: (props: IVIconsMenuButton) => JSX.Element;
+export {};

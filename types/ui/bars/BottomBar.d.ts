@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 interface IBottomBar {
     children?: React.ReactNode;
     classes?: string;

@@ -5,5 +5,5 @@ interface IButtonsGroupButton {
     title?: string;
     selected?: boolean;
 }
-declare const ButtonsGroupButton: (props: IButtonsGroupButton) => JSX.Element;
-export default ButtonsGroupButton;
+export declare const ButtonsGroupButton: (props: IButtonsGroupButton) => JSX.Element;
+export {};

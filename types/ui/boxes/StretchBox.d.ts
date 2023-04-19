@@ -3,5 +3,5 @@ interface IStretchBox {
     children?: React.ReactNode;
     classes?: string;
 }
-declare const StretchBox: (props: IStretchBox) => JSX.Element;
-export default StretchBox;
+export declare const StretchBox: (props: IStretchBox) => JSX.Element;
+export {};

@@ -10,5 +10,5 @@ interface IButton {
     classes?: string;
     type?: EButtonType;
 }
-declare const Button: (props: IButton) => JSX.Element;
-export default Button;
+export declare const Button: (props: IButton) => JSX.Element;
+export {};

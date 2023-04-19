@@ -1,6 +1,6 @@
 {
   "name": "darkly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dark React Starter Template + UI Kit",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "eslint": "eslint ./src/**",
-    "typescript-declarations": "tsc --clean --emitDeclarationOnly",
+    "typescript-declarations": "tsc --emitDeclarationOnly",
     "docs:website": "http-server ./docs",
     "docs:build": "node ./src/docs/generator/index.js",
     "docs:watch": "nodemon ./src/docs/generator/index.js"

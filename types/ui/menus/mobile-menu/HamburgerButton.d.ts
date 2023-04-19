@@ -2,5 +2,5 @@
 interface IHamburgerButton {
     classes?: string;
 }
-declare const HamburgerButton: (props: IHamburgerButton) => JSX.Element;
-export default HamburgerButton;
+export declare const HamburgerButton: (props: IHamburgerButton) => JSX.Element;
+export {};

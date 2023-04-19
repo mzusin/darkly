@@ -3,5 +3,5 @@ interface IButtonsGroup {
     children?: React.ReactNode;
     classes?: string;
 }
-declare const ButtonsGroup: (props: IButtonsGroup) => JSX.Element;
-export default ButtonsGroup;
+export declare const ButtonsGroup: (props: IButtonsGroup) => JSX.Element;
+export {};

@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ITopBar {
+export interface ITopBar {
     children?: React.ReactNode;
     classes?: string;
 }

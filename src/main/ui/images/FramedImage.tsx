@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IFramedImage {
+export interface IFramedImage {
     children?: React.ReactNode;
     classes?: string;
     width?: string|number;

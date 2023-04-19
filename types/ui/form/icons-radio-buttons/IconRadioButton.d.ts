@@ -6,5 +6,5 @@ interface IIconRadioButton {
     title?: string;
     checked?: boolean;
 }
-declare const IconRadioButton: (props: IIconRadioButton) => JSX.Element;
-export default IconRadioButton;
+export declare const IconRadioButton: (props: IIconRadioButton) => JSX.Element;
+export {};

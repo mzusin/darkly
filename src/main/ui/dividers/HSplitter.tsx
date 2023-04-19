@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IHSplitter {
+export interface IHSplitter {
     classes?: string;
 }
 

@@ -3,5 +3,5 @@ interface IIconRadioButtonGroup {
     children?: React.ReactNode;
     classes?: string;
 }
-declare const IconRadioButtonGroup: (props: IIconRadioButtonGroup) => JSX.Element;
-export default IconRadioButtonGroup;
+export declare const IconRadioButtonGroup: (props: IIconRadioButtonGroup) => JSX.Element;
+export {};

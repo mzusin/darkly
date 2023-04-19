@@ -4,5 +4,5 @@ interface IPanel {
     classes?: string;
     slideOnMobile?: boolean;
 }
-declare const Panel: (props: IPanel) => JSX.Element;
-export default Panel;
+export declare const Panel: (props: IPanel) => JSX.Element;
+export {};

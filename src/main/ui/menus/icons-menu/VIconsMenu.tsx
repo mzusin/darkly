@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 
-interface IVIconsMenu {
+export interface IVIconsMenu {
     children?: React.ReactNode;
     classes?: string;
 }

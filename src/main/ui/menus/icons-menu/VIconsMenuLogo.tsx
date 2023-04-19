@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IVIconsMenuLogo {
+export interface IVIconsMenuLogo {
     href?: string;
     children?: React.ReactNode;
     classes?: string;

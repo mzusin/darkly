@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 
-interface IPanel {
+export interface IPanel {
     children?: React.ReactNode;
     classes?: string;
     slideOnMobile?: boolean;

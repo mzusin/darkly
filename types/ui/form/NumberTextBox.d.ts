@@ -4,5 +4,5 @@ interface INumberTextBox {
     classes?: string;
     width?: string | number;
 }
-declare const NumberTextBox: (props: INumberTextBox) => JSX.Element;
-export default NumberTextBox;
+export declare const NumberTextBox: (props: INumberTextBox) => JSX.Element;
+export {};

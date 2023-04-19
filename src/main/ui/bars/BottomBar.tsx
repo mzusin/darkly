@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IBottomBar {
+export interface IBottomBar {
     children?: React.ReactNode;
     classes?: string;
 }

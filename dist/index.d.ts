@@ -1,7 +1,7 @@
-import { BottomBar } from '../types/ui/bars/BottomBar';
+import * as BottomBar from '../types/ui/bars/BottomBar';
 import { TopBar } from '../types/ui/bars/TopBar';
 import { StretchBox } from '../types/ui/boxes/StretchBox';
-import { Button } from '../types/ui/buttons/StretchBox';
+import { Button } from '../types/ui/buttons/Button';
 import { HSplitter } from '../types/ui/dividers/HSplitter';
 import { ButtonsGroup } from '../types/ui/form/buttons-group/ButtonsGroup';
 import { ButtonsGroupButton } from '../types/ui/form/buttons-group/ButtonsGroupButton';

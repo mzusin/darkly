@@ -3,5 +3,5 @@ interface IVIconsMenu {
     children?: React.ReactNode;
     classes?: string;
 }
-declare const VIconsMenu: (props: IVIconsMenu) => JSX.Element;
-export default VIconsMenu;
+export declare const VIconsMenu: (props: IVIconsMenu) => JSX.Element;
+export {};

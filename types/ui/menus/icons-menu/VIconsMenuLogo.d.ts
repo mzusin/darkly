@@ -5,5 +5,5 @@ interface IVIconsMenuLogo {
     classes?: string;
     title?: string;
 }
-declare const VIconsMenuLogo: (props: IVIconsMenuLogo) => JSX.Element;
-export default VIconsMenuLogo;
+export declare const VIconsMenuLogo: (props: IVIconsMenuLogo) => JSX.Element;
+export {};

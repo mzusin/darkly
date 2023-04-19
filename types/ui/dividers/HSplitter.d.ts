@@ -2,5 +2,5 @@
 interface IHSplitter {
     classes?: string;
 }
-declare const HSplitter: (props: IHSplitter) => JSX.Element;
-export default HSplitter;
+export declare const HSplitter: (props: IHSplitter) => JSX.Element;
+export {};

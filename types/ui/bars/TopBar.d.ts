@@ -3,5 +3,5 @@ interface ITopBar {
     children?: React.ReactNode;
     classes?: string;
 }
-declare const TopBar: (props: ITopBar) => JSX.Element;
-export default TopBar;
+export declare const TopBar: (props: ITopBar) => JSX.Element;
+export {};

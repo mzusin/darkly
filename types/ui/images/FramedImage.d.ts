@@ -5,5 +5,5 @@ interface IFramedImage {
     width?: string | number;
     height?: string | number;
 }
-declare const FramedImage: (props: IFramedImage) => JSX.Element;
-export default FramedImage;
+export declare const FramedImage: (props: IFramedImage) => JSX.Element;
+export {};

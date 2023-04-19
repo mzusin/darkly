@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { closeMobileMenu, toggleMobileMenu } from '../../../domain/mobile-menu-provider';
 
-interface IHamburgerButton {
+export interface IHamburgerButton {
     classes?: string;
 }
 
