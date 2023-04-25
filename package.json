@@ -56,5 +56,8 @@
     "react-dom": "^18.2.0",
     "tailwind": "^4.0.0",
     "uglifycss": "^0.0.29"
+  },
+  "dependencies": {
+    "mz-react-input-number": "^1.0.3"
   }
 }
