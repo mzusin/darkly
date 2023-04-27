@@ -228,16 +228,105 @@ Dark React Starter Template + UI Kit.
   ```
 
 ## Menus
-- Icons Menu
+- Vertical Icons Menu
+
+  ```ts
+  export interface IVIconsMenu {
+      children?: React.ReactNode;
+      classes?: string;
+  }
+  
+  export interface IVIconsMenuButton {
+    children?: React.ReactNode;
+    classes?: string;
+    title?: string;
+    selected?: boolean;
+  }
+  
+  export interface IVIconsMenuLogo {
+    href?: string;
+    children?: React.ReactNode;
+    classes?: string;
+    title?: string;
+  }
+  ```
+  
+  ```tsx
+  <VIconsMenu>
+  
+      <div className="flex">
+          <HamburgerButton />
+  
+          <VIconsMenuLogo href="/">
+              <svg>...</svg>
+          </VIconsMenuLogo>
+      </div>
+  
+      <HSplitter classes="mb-4" />
+  
+      <VIconsMenuButton title="Image Size" selected={ true }>
+        <svg>...</svg>
+      </VIconsMenuButton>
+    
+      ...
+  
+  </VIconsMenu>
+  ```
+
 - Mobile Menu
 
-## Panels
-- Panel
-- Panel Section
-- Panel Title
+  ```ts
+  export interface ICloseMobileMenuButton {
+      classes?: string;
+  }
+  
+  export interface IHamburgerButton {
+    classes?: string;
+  }
+  ```
 
+## Panels
+
+- Panel
+
+  ```ts
+  export interface IPanel {
+      children?: React.ReactNode;
+      classes?: string;
+      slideOnMobile?: boolean;
+  }
+  
+  export interface IPanelTitle {
+    classes?: string;
+    children?: React.ReactNode;
+  }
+  ```
+
+  ```tsx
+  <Panel slideOnMobile={ true }>
+      <PanelTitle>
+          Stripes
+          <CloseMobileMenuButton />
+      </PanelTitle>
+      <HSplitter />
+  
+      ...
+  </Panel>
+  ```
+  
 ## SideBars
 - SideBar
+
+  ```ts
+  export interface ISideBar {
+      children?: React.ReactNode;
+      classes?: string;
+  }
+  ```
+  
+  ```tsx
+  <SideBar>...</SideBar>
+  ```
 
 
 
