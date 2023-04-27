@@ -1,6 +1,8 @@
 # ⋆⁺｡☆ Darkly ☆｡⁺⋆
 Dark React Starter Template + UI Kit.
 
+![Darkly Preview](https://github.com/mzusin/darkly/blob/main/img/preview.png?raw=true)
+
 ## Features
 - Responsive
 - Written in [TypeScript](https://www.typescriptlang.org/)
