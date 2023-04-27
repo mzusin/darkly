@@ -1,5 +1,5 @@
 import '../../css/index.pcss';
-import React from 'react';
+import React, { useState } from 'react';
 import { VIconsMenu } from '../../ui/menus/icons-menu/VIconsMenu';
 import { Panel } from '../../ui/panels/Panel';
 import { StretchBox } from '../../ui/boxes/StretchBox';
@@ -22,6 +22,9 @@ import { HamburgerButton } from '../../ui/menus/mobile-menu/HamburgerButton';
 import { CloseMobileMenuButton } from '../../ui/menus/mobile-menu/CloseMobileMenuButton';
 
 const App = () => {
+
+    const [size, setSize] = useState(10);
+
     return (
         <div className="bg-slate-900 text-slate-200 h-screen w-full flex text-base">
 
@@ -120,7 +123,7 @@ const App = () => {
                     </PanelTitle>
                     <HSplitter />
 
-                    <NumberTextBox classes="m-4" width="100px">
+                    <NumberTextBox classes="m-4" width="100px" value={ size } setValue={ setSize }>
                         Size
                     </NumberTextBox>
 
