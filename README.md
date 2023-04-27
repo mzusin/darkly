@@ -78,13 +78,98 @@ Dark React Starter Template + UI Kit.
   ```tsx
   <Button type={ EButtonType.OutlineSecondary }>Reset</Button>
   ```
+  
 ## Dividers
 - Horizontal Splitter
 
+  ```ts
+  export interface IHSplitter {
+      classes?: string;
+  }
+  ```
+  
+  ```tsx
+  <HSplitter classes="mb-4" />
+  ```
+
 ## Form
 - Buttons Group
+
+  ```ts
+  export interface IButtonsGroup {
+      children?: React.ReactNode;
+      classes?: string;
+  }
+
+  export interface IButtonsGroupButton {
+      children?: React.ReactNode;
+      classes?: string;
+      title?: string;
+      selected?: boolean;
+      onClick?: Function;
+  }
+  ```
+
+  ```tsx
+  <ButtonsGroup>
+      <ButtonsGroupButton selected={ myValue === 0 } onClick={ () => {
+          setMyValue(0);
+      }}>My Value 1</ButtonsGroupButton>
+  
+      <ButtonsGroupButton selected={ myValue === 1 } onClick={ () => {
+          setMyValue(1);
+      }}>My Value 2</ButtonsGroupButton>
+  
+      <ButtonsGroupButton selected={ myValue === 2 } onClick={ () => {
+          setMyValue(2);
+      }}>My Value 3</ButtonsGroupButton>
+  </ButtonsGroup>
+  ```  
+
 - Icons Radio Buttons
+
+  ```ts
+  export interface IIconRadioButtonGroup {
+      children?: React.ReactNode;
+      classes?: string;
+  }
+  
+  export interface IIconRadioButton {
+    groupName: string;
+    children?: React.ReactNode;
+    classes?: string;
+    title?: string;
+    checked?: boolean;
+    onChange?: Function;
+  }
+  ```
+
+  ```tsx
+  <IconRadioButtonGroup>
+      <IconRadioButton
+          groupName="my-group"
+          title="My Title 1"
+          checked={ myValue === 0 }
+          onChange={ () => {
+              setValue(0);
+          }}>
+          My Radio 1
+      </IconRadioButton>
+  
+      <IconRadioButton
+          groupName="my-group"
+          title="My Title 2"
+          checked={ myValue === 1 }
+          onChange={ () => {
+            setValue(1);
+          }}>
+        My Radio 2
+      </IconRadioButton>
+  
+  </IconRadioButtonGroup>
+  ```
 - Color Picker
+
 - Numbers TextBox
 
 ## Images
