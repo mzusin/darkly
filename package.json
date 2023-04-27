@@ -50,7 +50,6 @@
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.17.17",
     "eslint": "^8.38.0",
-    "markdown-documentation-maker": "^1.0.16",
     "postcss": "^8.4.22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

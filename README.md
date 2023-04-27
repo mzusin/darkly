@@ -19,6 +19,43 @@ Dark React Starter Template + UI Kit.
 
 2. Then copy one of the [templates](https://github.com/mzusin/darkly/tree/main/src/main/templates).
 
+## Components
+
+## Bars
+- Top Bar
+- Bottom Bar
+
+## Boxes
+- Stretch Box
+
+## Buttons
+- Button
+
+## Dividers
+- Horizontal Splitter
+
+## Form
+- Buttons Group
+- Icons Radio Buttons
+- Color Picker
+- Numbers TextBox
+
+## Images
+- Framed Image
+
+## Menus
+- Icons Menu
+- Mobile Menu
+
+## Panels
+- Panel
+- Panel Section
+- Panel Title
+
+## SideBars
+- SideBar
+
+
 
 
 
