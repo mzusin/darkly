@@ -1,17 +1,25 @@
 import React from 'react';
+import 'toolcool-color-picker';
+// import TCColorPicker from 'toolcool-color-picker';
+
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            'toolcool-color-picker': any;
+        }
+    }
+}
 
 export interface IColorPicker {
+    color: string;
+    setColor?: Function;
     children?: React.ReactNode;
     classes?: string;
-    width?: string|number;
+
 }
 
 export const ColorPicker = (props: IColorPicker) => {
-    const { children, classes, width } = props;
-
-    const style = {
-        width,
-    };
+    const { color, setColor, children, classes } = props;
 
     return (
         <section className={ `flex items-center justify-between ${ classes || '' }` } >
@@ -19,11 +27,7 @@ export const ColorPicker = (props: IColorPicker) => {
                 { children }
             </div>
             <div>
-                <input
-                    style={ style }
-                    type="text"
-                    className="bg-slate-900 transition border-2 border-slate-700 hover:border-slate-600 focus:border-slate-600 active:border-slate-600 outline-none rounded px-2 py-1 text-sm"
-                />
+                <toolcool-color-picker color={ color } setColor={ setColor } />
             </div>
         </section>
     )

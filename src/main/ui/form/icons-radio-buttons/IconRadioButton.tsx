@@ -6,10 +6,11 @@ export interface IIconRadioButton {
     classes?: string;
     title?: string;
     checked?: boolean;
+    onChange?: Function;
 }
 
 export const IconRadioButton = (props: IIconRadioButton) => {
-    const { children, classes, groupName, title, checked } = props;
+    const { children, classes, groupName, title, checked, onChange } = props;
 
     const checkedClasses = checked ? 'bg-sky-800' : 'bg-slate-900';
 
@@ -23,6 +24,10 @@ export const IconRadioButton = (props: IIconRadioButton) => {
                 title={ title }
                 type="radio"
                 className="hidden"
+                onChange={ (evt) => {
+                    if(typeof onChange !== 'function') return;
+                    onChange(evt);
+                } }
             />
         </label>
     )

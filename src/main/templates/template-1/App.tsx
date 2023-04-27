@@ -24,6 +24,10 @@ import { CloseMobileMenuButton } from '../../ui/menus/mobile-menu/CloseMobileMen
 const App = () => {
 
     const [size, setSize] = useState(10);
+    const [color, setColor] = useState('#168B9E');
+    const [duration, setDuration] = useState(100);
+    const [selectedAnimation, setSelectedAnimation] = useState(0);
+    const [imgFormat, _setImageFormat] = useState(0);
 
     return (
         <div className="bg-slate-900 text-slate-200 h-screen w-full flex text-base">
@@ -127,12 +131,18 @@ const App = () => {
                         Size
                     </NumberTextBox>
 
-                    <ColorPicker classes="m-4" width="100px">
+                    <ColorPicker classes="m-4" color={ color } setColor={ setColor }>
                         Color
                     </ColorPicker>
 
                     <IconRadioButtonGroup>
-                        <IconRadioButton groupName="animation" title="Linear Animation" checked={ true }>
+                        <IconRadioButton
+                            groupName="animation"
+                            title="Linear Animation"
+                            checked={ selectedAnimation === 0 }
+                            onChange={ () => {
+                                setSelectedAnimation(0);
+                            }}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round"
                                  width="20px" height="20px"
                                  strokeLinejoin="round" strokeWidth="1.5"
@@ -142,7 +152,13 @@ const App = () => {
                             </svg>
                         </IconRadioButton>
 
-                        <IconRadioButton groupName="animation" title="Clockwise Rotation">
+                        <IconRadioButton
+                            groupName="animation"
+                            title="Clockwise Rotation"
+                            checked={ selectedAnimation === 1 }
+                            onChange={ () => {
+                                setSelectedAnimation(1);
+                            }}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                                  strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
                                  width="20px" height="20px" viewBox="0 0 24 24">
@@ -151,7 +167,13 @@ const App = () => {
                             </svg>
                         </IconRadioButton>
 
-                        <IconRadioButton groupName="animation" title="Counter Clockwise Rotation">
+                        <IconRadioButton
+                            groupName="animation"
+                            title="Counter Clockwise Rotation"
+                            checked={ selectedAnimation === 2 }
+                            onChange={ () => {
+                            setSelectedAnimation(2);
+                        }}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                                  strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
                                  width="20px" height="20px" viewBox="0 0 24 24">
@@ -160,7 +182,13 @@ const App = () => {
                             </svg>
                         </IconRadioButton>
 
-                        <IconRadioButton groupName="animation" title="No Animation">
+                        <IconRadioButton
+                            groupName="animation"
+                            title="No Animation"
+                            checked={ selectedAnimation === 3 }
+                            onChange={ () => {
+                            setSelectedAnimation(3);
+                        }}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                                  strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
                                  width="20px" height="20px" viewBox="0 0 24 24">
@@ -170,15 +198,23 @@ const App = () => {
                         </IconRadioButton>
                     </IconRadioButtonGroup>
 
-                    <NumberTextBox classes="m-4" width="100px">
+                    <NumberTextBox classes="m-4" width="100px" value={ duration } setValue={ setDuration }>
                         Duration
                     </NumberTextBox>
 
                     <ButtonsGroup>
-                        <ButtonsGroupButton>SVG</ButtonsGroupButton>
-                        <ButtonsGroupButton>PNG</ButtonsGroupButton>
-                        <ButtonsGroupButton>JPG</ButtonsGroupButton>
-                        <ButtonsGroupButton>GIF</ButtonsGroupButton>
+                        <ButtonsGroupButton selected={ imgFormat === 0 } onClick={ () => {
+                            _setImageFormat(0);
+                        }}>SVG</ButtonsGroupButton>
+                        <ButtonsGroupButton selected={ imgFormat === 1 } onClick={ () => {
+                            _setImageFormat(1);
+                        }}>PNG</ButtonsGroupButton>
+                        <ButtonsGroupButton selected={ imgFormat === 2 } onClick={ () => {
+                            _setImageFormat(2);
+                        }}>JPG</ButtonsGroupButton>
+                        <ButtonsGroupButton selected={ imgFormat === 3 } onClick={ () => {
+                            _setImageFormat(3);
+                        }}>GIF</ButtonsGroupButton>
                     </ButtonsGroup>
                 </Panel>
 
