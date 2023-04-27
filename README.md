@@ -168,12 +168,64 @@ Dark React Starter Template + UI Kit.
   
   </IconRadioButtonGroup>
   ```
+
 - Color Picker
+
+  ```ts
+  export interface IColorPicker {
+      color: string;
+      setColor?: Function;
+      children?: React.ReactNode;
+      classes?: string;
+  }
+  ```
+
+  ```tsx
+  <ColorPicker classes="m-4" color={ color } setColor={ setColor }>
+      Color
+  </ColorPicker>
+  ```
 
 - Numbers TextBox
 
+  ```ts
+  export interface INumberTextBox {
+      children?: React.ReactNode;
+      classes?: string;
+      width?: string|number;
+  
+      min?: number | string;
+      max?: number | string;
+      step?: number | string;
+      decimalPlaces?: number;
+      removeRegex?: RegExp;
+  
+      value?: number | string;
+      setValue?: Function;
+  }
+  ```
+
+  ```tsx
+  <NumberTextBox classes="m-4" width="100px" value={ size } setValue={ setSize }>
+      Size
+  </NumberTextBox>
+  ```
+
 ## Images
 - Framed Image
+
+  ```ts
+  export interface IFramedImage {
+      children?: React.ReactNode;
+      classes?: string;
+      width?: string|number;
+      height?: string|number;
+  }
+  ```
+
+  ```tsx
+  <FramedImage width={ '500px' } height={ '270px' } classes="mx-auto">...</FramedImage>
+  ```
 
 ## Menus
 - Icons Menu

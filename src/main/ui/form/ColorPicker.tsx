@@ -1,6 +1,5 @@
 import React from 'react';
 import 'toolcool-color-picker';
-// import TCColorPicker from 'toolcool-color-picker';
 
 declare global {
     namespace JSX {
@@ -15,7 +14,6 @@ export interface IColorPicker {
     setColor?: Function;
     children?: React.ReactNode;
     classes?: string;
-
 }
 
 export const ColorPicker = (props: IColorPicker) => {
