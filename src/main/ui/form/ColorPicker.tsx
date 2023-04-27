@@ -1,9 +1,12 @@
 import React from 'react';
 import 'toolcool-color-picker';
+// import ToolCoolColorPicker from 'toolcool-color-picker';
 
 declare global {
+    // eslint-disable-next-line
     namespace JSX {
         interface IntrinsicElements {
+            // eslint-disable-next-line
             'toolcool-color-picker': any;
         }
     }

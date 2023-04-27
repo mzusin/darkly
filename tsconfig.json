@@ -24,6 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "strictBindCallApply": true,
+    "skipLibCheck": true,
     "jsx": "react"
   },
   "include": [
