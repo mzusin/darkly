@@ -9,6 +9,18 @@ Dark React Starter Template + UI Kit.
 - Based on [Tailwind CSS framework](https://tailwindcss.com/)
 - Uses [esbuild bundler](https://esbuild.github.io/)
 
+## Usage
+
+1. First install the module from npm:
+
+    ```shell
+    npm i darkly
+    ```
+
+2. Then copy one of the [templates](https://github.com/mzusin/darkly/tree/main/src/main/templates).
+
+
+
 
 
 
