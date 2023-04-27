@@ -23,8 +23,27 @@ Dark React Starter Template + UI Kit.
 
 ## Bars
 - Top Bar
+   ```ts
+   export interface ITopBar {
+       children?: React.ReactNode;
+       classes?: string;
+   }
+   ```
+ 
+   ```tsx
+   <BottomBar classes="justify-end">...</BottomBar> 
+   ```
 - Bottom Bar
-
+   ```ts
+   export interface IBottomBar {
+       children?: React.ReactNode;
+       classes?: string;
+   }
+   ```
+  
+   ```tsx
+   <TopBar classes="text-center justify-center">...</TopBar>
+   ```
 ## Boxes
 - Stretch Box
 
