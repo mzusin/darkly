@@ -47,9 +47,37 @@ Dark React Starter Template + UI Kit.
 ## Boxes
 - Stretch Box
 
+   ```ts
+   export interface IStretchBox {
+       children?: React.ReactNode;
+       classes?: string;
+   }
+   ```
+
+  ```tsx
+  <StretchBox classes="flex justify-center items-center p-4">...</StretchBox>
+  ```
 ## Buttons
 - Button
 
+  ```ts
+  export enum EButtonType {
+      Primary = 1,
+      OutlinePrimary = 2,
+      Secondary = 3,
+      OutlineSecondary = 4,
+  }
+  
+  export interface IButton {
+      children?: React.ReactNode;
+      classes?: string;
+      type?: EButtonType;
+  }
+  ```
+
+  ```tsx
+  <Button type={ EButtonType.OutlineSecondary }>Reset</Button>
+  ```
 ## Dividers
 - Horizontal Splitter
 
