@@ -1,45 +1,154 @@
-import { BottomBar, IBottomBar } from '../types/ui/bars/BottomBar';
-import { TopBar, ITopBar } from '../types/ui/bars/TopBar';
-import { StretchBox, IStretchBox } from '../types/ui/boxes/StretchBox';
-import { Button, IButton } from '../types/ui/buttons/Button';
-import { HSplitter, IHSplitter } from '../types/ui/dividers/HSplitter';
-import { ButtonsGroup, IButtonsGroup } from '../types/ui/form/buttons-group/ButtonsGroup';
-import { ButtonsGroupButton, IButtonsGroupButton } from '../types/ui/form/buttons-group/ButtonsGroupButton';
-import { IconRadioButton, IIconRadioButton } from '../types/ui/form/icons-radio-buttons/IconRadioButton';
-import { IconRadioButtonGroup, IIconRadioButtonGroup } from '../types/ui/form/icons-radio-buttons/IconRadioButtonGroup';
-import { ColorPicker, IColorPicker } from '../types/ui/form/ColorPicker';
-import { NumberTextBox, INumberTextBox } from '../types/ui/form/NumberTextBox';
-import { FramedImage, IFramedImage } from '../types/ui/images/FramedImage';
-import { VIconsMenu, IVIconsMenu } from '../types/ui/menus/icons-menu/VIconsMenu';
-import { VIconsMenuButton, IVIconsMenuButton } from '../types/ui/menus/icons-menu/VIconsMenuButton';
-import { VIconsMenuLogo, IVIconsMenuLogo } from '../types/ui/menus/icons-menu/VIconsMenuLogo';
-import { CloseMobileMenuButton, ICloseMobileMenuButton } from '../types/ui/menus/mobile-menu/CloseMobileMenuButton';
-import { HamburgerButton, IHamburgerButton } from '../types/ui/menus/mobile-menu/HamburgerButton';
-import { Panel, IPanel } from '../types/ui/panels/Panel';
-import { PanelSection } from '../types/ui/panels/PanelSection';
-import { PanelTitle, IPanelTitle } from '../types/ui/panels/PanelTitle';
-import { SideBar, ISideBar } from '../types/ui/sidebar/SideBar';
-
 declare module 'darkly' {
-    export { BottomBar, IBottomBar };
-    export { TopBar, ITopBar };
-    export { StretchBox, IStretchBox };
-    export { Button, IButton };
-    export { HSplitter, IHSplitter };
-    export { ButtonsGroup, IButtonsGroup };
-    export { ButtonsGroupButton, IButtonsGroupButton };
-    export { IconRadioButton, IIconRadioButton };
-    export { IconRadioButtonGroup, IIconRadioButtonGroup };
-    export { ColorPicker, IColorPicker };
-    export { NumberTextBox, INumberTextBox };
-    export { FramedImage, IFramedImage };
-    export { VIconsMenu, IVIconsMenu };
-    export { VIconsMenuButton, IVIconsMenuButton };
-    export { VIconsMenuLogo, IVIconsMenuLogo };
-    export { CloseMobileMenuButton, ICloseMobileMenuButton };
-    export { HamburgerButton, IHamburgerButton };
-    export { Panel, IPanel };
-    export { PanelSection };
-    export { PanelTitle, IPanelTitle };
-    export { SideBar, ISideBar };
+    /// <reference types="react" />
+
+    export interface IBottomBar {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const BottomBar: (props: IBottomBar) => JSX.Element;
+
+    export interface ITopBar {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const TopBar: (props: ITopBar) => JSX.Element;
+
+    export interface IStretchBox {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const StretchBox: (props: IStretchBox) => JSX.Element;
+
+    export enum EButtonType {
+        Primary = 1,
+        OutlinePrimary = 2,
+        Secondary = 3,
+        OutlineSecondary = 4
+    }
+    export interface IButton {
+        children?: React.ReactNode;
+        classes?: string;
+        type?: EButtonType;
+    }
+    export const Button: (props: IButton) => JSX.Element;
+
+    export interface IHSplitter {
+        classes?: string;
+    }
+    export const HSplitter: (props: IHSplitter) => JSX.Element;
+
+    export interface IButtonsGroup {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const ButtonsGroup: (props: IButtonsGroup) => JSX.Element;
+
+    export interface IButtonsGroupButton {
+        children?: React.ReactNode;
+        classes?: string;
+        title?: string;
+        selected?: boolean;
+        onClick?: Function;
+    }
+    export const ButtonsGroupButton: (props: IButtonsGroupButton) => JSX.Element;
+
+    export interface IIconRadioButton {
+        groupName: string;
+        children?: React.ReactNode;
+        classes?: string;
+        title?: string;
+        checked?: boolean;
+        onChange?: Function;
+    }
+    export const IconRadioButton: (props: IIconRadioButton) => JSX.Element;
+
+    export interface IIconRadioButtonGroup {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const IconRadioButtonGroup: (props: IIconRadioButtonGroup) => JSX.Element;
+
+    export interface IColorPicker {
+        color: string;
+        setColor?: Function;
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const ColorPicker: (props: IColorPicker) => JSX.Element;
+
+    export interface INumberTextBox {
+        children?: React.ReactNode;
+        classes?: string;
+        width?: string | number;
+        min?: number | string;
+        max?: number | string;
+        step?: number | string;
+        decimalPlaces?: number;
+        removeRegex?: RegExp;
+        value?: number | string;
+        setValue?: Function;
+    }
+    export const NumberTextBox: (props: INumberTextBox) => JSX.Element;
+
+    export interface IFramedImage {
+        children?: React.ReactNode;
+        classes?: string;
+        width?: string | number;
+        height?: string | number;
+    }
+    export const FramedImage: (props: IFramedImage) => JSX.Element;
+
+    export interface IVIconsMenu {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+    export const VIconsMenu: (props: IVIconsMenu) => JSX.Element;
+
+    export interface IVIconsMenuButton {
+        children?: React.ReactNode;
+        classes?: string;
+        title?: string;
+        selected?: boolean;
+    }
+    export const VIconsMenuButton: (props: IVIconsMenuButton) => JSX.Element;
+
+    export interface IVIconsMenuLogo {
+        href?: string;
+        children?: React.ReactNode;
+        classes?: string;
+        title?: string;
+    }
+    export const VIconsMenuLogo: (props: IVIconsMenuLogo) => JSX.Element;
+
+    export interface ICloseMobileMenuButton {
+        classes?: string;
+    }
+    export const CloseMobileMenuButton: (props: ICloseMobileMenuButton) => JSX.Element;
+
+    export interface IHamburgerButton {
+        classes?: string;
+    }
+    export const HamburgerButton: (props: IHamburgerButton) => JSX.Element;
+
+    export interface IPanel {
+        children?: React.ReactNode;
+        classes?: string;
+        slideOnMobile?: boolean;
+    }
+    export const Panel: (props: IPanel) => JSX.Element;
+
+    export const PanelSection: () => JSX.Element;
+
+    export interface IPanelTitle {
+        classes?: string;
+        children?: React.ReactNode;
+    }
+    export const PanelTitle: (props: IPanelTitle) => JSX.Element;
+
+    export interface ISideBar {
+        children?: React.ReactNode;
+        classes?: string;
+    }
+
+    export const SideBar: (props: ISideBar) => JSX.Element;
 }
