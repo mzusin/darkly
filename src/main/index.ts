@@ -1,4 +1,3 @@
-// import './css/index.pcss';
 export * from './ui/menus/icons-menu/VIconsMenu';
 export * from './ui/panels/Panel';
 export * from './ui/boxes/StretchBox';

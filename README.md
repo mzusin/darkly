@@ -19,6 +19,12 @@ Dark React Starter Template + UI Kit.
 
 2. Then copy one of the [templates](https://github.com/mzusin/darkly/tree/main/src/main/templates).
 
+3. Import CSS file:
+
+  ```tsx
+  import 'darkly/dist/darkly.min.css';
+  ```
+
 ## Components
 
 ## Bars
