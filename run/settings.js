@@ -15,7 +15,7 @@ export const settings = {
     format: 'esm',
     bundle: true,
     sourcemap: 'linked', // external
-    // minify: true,
+    minify: true,
     target: ['es6'],
     // outfile: './dist/darkly.min.js',
     plugins: [postCssPlugin],
