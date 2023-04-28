@@ -29,6 +29,7 @@ declare module 'darkly' {
         children?: React.ReactNode;
         classes?: string;
         type?: EButtonType;
+        onClick?: Function;
     }
     export const Button: (props: IButton) => JSX.Element;
 
@@ -109,6 +110,7 @@ declare module 'darkly' {
         classes?: string;
         title?: string;
         selected?: boolean;
+        onClick?: Function;
     }
     export const VIconsMenuButton: (props: IVIconsMenuButton) => JSX.Element;
 

@@ -11,6 +11,7 @@ export interface IButton {
     children?: React.ReactNode;
     classes?: string;
     type?: EButtonType;
+    onClick?: Function;
 }
 
 const getButtonClasses = (type?: EButtonType) => {
@@ -38,10 +39,18 @@ const getButtonClasses = (type?: EButtonType) => {
 };
 
 export const Button = (props: IButton) => {
-    const { children, classes, type } = props;
+    const { children, classes, type, onClick } = props;
+
+    const onClickHandler = () => {
+        if(typeof onClick !== 'function') return;
+        onClick();
+    };
 
     return (
-        <button type="button" className={ `${ getButtonClasses(type) } ${ classes || '' }` }>
+        <button
+            type="button"
+            onClick={ onClickHandler }
+            className={ `${ getButtonClasses(type) } ${ classes || '' }` }>
             { children }
         </button>
     )

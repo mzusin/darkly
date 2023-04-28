@@ -15,5 +15,3 @@ const init = () => {
 };
 
 init();
-
-// export * from './ui/bars/BottomBar';

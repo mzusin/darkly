@@ -78,6 +78,7 @@ Dark React Starter Template + UI Kit.
       children?: React.ReactNode;
       classes?: string;
       type?: EButtonType;
+      onClick?: Function;
   }
   ```
 
@@ -247,6 +248,7 @@ Dark React Starter Template + UI Kit.
     classes?: string;
     title?: string;
     selected?: boolean;
+    onClick?: Function;
   }
   
   export interface IVIconsMenuLogo {

@@ -1,6 +1,6 @@
 /* 
 Darkly - Dark React Starter Template + UI Kit
-Version: 1.0.8
+Version: 1.0.9
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com
 Documentation: https://github.com/mzusin/darkly
@@ -24478,12 +24478,18 @@ var HSplitter = (props) => {
 // src/main/ui/menus/icons-menu/VIconsMenuButton.tsx
 var import_react7 = __toESM(require_react(), 1);
 var VIconsMenuButton = (props) => {
-  const { children, classes, title, selected } = props;
+  const { children, classes, title, selected, onClick } = props;
+  const onClickHandler = () => {
+    if (typeof onClick !== "function")
+      return;
+    onClick();
+  };
   return /* @__PURE__ */ import_react7.default.createElement(
     "button",
     {
       type: "button",
       title,
+      onClick: onClickHandler,
       className: `cursor-pointer p-4 mb-1 transition-colors hover:bg-slate-900 rounded ${selected ? "bg-slate-900" : ""} ${classes || ""}`
     },
     children
@@ -24536,8 +24542,21 @@ var getButtonClasses = (type) => {
   }
 };
 var Button = (props) => {
-  const { children, classes, type } = props;
-  return /* @__PURE__ */ import_react10.default.createElement("button", { type: "button", className: `${getButtonClasses(type)} ${classes || ""}` }, children);
+  const { children, classes, type, onClick } = props;
+  const onClickHandler = () => {
+    if (typeof onClick !== "function")
+      return;
+    onClick();
+  };
+  return /* @__PURE__ */ import_react10.default.createElement(
+    "button",
+    {
+      type: "button",
+      onClick: onClickHandler,
+      className: `${getButtonClasses(type)} ${classes || ""}`
+    },
+    children
+  );
 };
 
 // src/main/ui/sidebar/SideBar.tsx
