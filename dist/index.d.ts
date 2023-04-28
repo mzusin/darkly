@@ -87,6 +87,9 @@ declare module 'darkly' {
         classes?: string;
         style?: CSSProperties;
         popupPosition?: string;
+        buttonWidth?: string;
+        buttonHeight?: string;
+        buttonPadding?: string;
     }
     export const ColorPicker: (props: IColorPicker) => JSX.Element;
 
