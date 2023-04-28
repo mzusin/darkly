@@ -1,6 +1,6 @@
 /* 
 Darkly - Dark React Starter Template + UI Kit
-Version: 1.0.12
+Version: 1.0.13
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com
 Documentation: https://github.com/mzusin/darkly
