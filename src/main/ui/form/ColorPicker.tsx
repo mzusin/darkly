@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import 'toolcool-color-picker';
 // import ToolCoolColorPicker from 'toolcool-color-picker';
 
@@ -22,13 +22,35 @@ export interface IColorPicker {
 export const ColorPicker = (props: IColorPicker) => {
     const { color, setColor, children, classes } = props;
 
+    const colorPickerRef = useRef<HTMLElement>();
+
+    useEffect(() => {
+
+        const colorPicker = colorPickerRef.current;
+
+        const onColorChange = (evt: Event) => {
+            if(typeof setColor !== 'function') return;
+            const customEvent = evt as CustomEvent;
+            setColor(customEvent.detail.rgba);
+        };
+
+        colorPicker?.addEventListener('change', onColorChange);
+
+        return () => {
+            colorPicker?.removeEventListener('change', onColorChange);
+        };
+    }, []);
+
     return (
         <section className={ `flex items-center justify-between ${ classes || '' }` } >
             <div>
                 { children }
             </div>
             <div>
-                <toolcool-color-picker color={ color } setColor={ setColor } />
+                <toolcool-color-picker
+                    color={ color }
+                    ref={ colorPickerRef }
+                />
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 /* 
 Darkly - Dark React Starter Template + UI Kit
-Version: 1.0.9
+Version: 1.0.10
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com
 Documentation: https://github.com/mzusin/darkly
@@ -1099,11 +1099,11 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useReducer(reducer, initialArg, init2);
         }
-        function useRef(initialValue) {
+        function useRef2(initialValue) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect2(create, deps) {
+        function useEffect3(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -1885,14 +1885,14 @@ var require_react_development = __commonJS({
         exports.useContext = useContext;
         exports.useDebugValue = useDebugValue;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect2;
+        exports.useEffect = useEffect3;
         exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect;
         exports.useMemo = useMemo;
         exports.useReducer = useReducer;
-        exports.useRef = useRef;
+        exports.useRef = useRef2;
         exports.useState = useState2;
         exports.useSyncExternalStore = useSyncExternalStore;
         exports.useTransition = useTransition;
@@ -25728,7 +25728,27 @@ var import_react15 = __toESM(require_react(), 1);
 // src/main/ui/form/ColorPicker.tsx
 var ColorPicker = (props) => {
   const { color, setColor, children, classes } = props;
-  return /* @__PURE__ */ import_react15.default.createElement("section", { className: `flex items-center justify-between ${classes || ""}` }, /* @__PURE__ */ import_react15.default.createElement("div", null, children), /* @__PURE__ */ import_react15.default.createElement("div", null, /* @__PURE__ */ import_react15.default.createElement("toolcool-color-picker", { color, setColor })));
+  const colorPickerRef = (0, import_react15.useRef)();
+  (0, import_react15.useEffect)(() => {
+    const colorPicker = colorPickerRef.current;
+    const onColorChange = (evt) => {
+      if (typeof setColor !== "function")
+        return;
+      const customEvent = evt;
+      setColor(customEvent.detail.rgba);
+    };
+    colorPicker == null ? void 0 : colorPicker.addEventListener("change", onColorChange);
+    return () => {
+      colorPicker == null ? void 0 : colorPicker.removeEventListener("change", onColorChange);
+    };
+  }, []);
+  return /* @__PURE__ */ import_react15.default.createElement("section", { className: `flex items-center justify-between ${classes || ""}` }, /* @__PURE__ */ import_react15.default.createElement("div", null, children), /* @__PURE__ */ import_react15.default.createElement("div", null, /* @__PURE__ */ import_react15.default.createElement(
+    "toolcool-color-picker",
+    {
+      color,
+      ref: colorPickerRef
+    }
+  )));
 };
 
 // src/main/ui/form/icons-radio-buttons/IconRadioButton.tsx
