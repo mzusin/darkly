@@ -19,7 +19,7 @@ export const PanelSection = (props: IPanelSection) => {
     const scrollable = props.scrollable ? 'overflow-auto' : '';
 
     return (
-        <section className={ `${ fullHeight } ${ scrollable } ${ classes }` }>
+        <section className={ `${ fullHeight } ${ scrollable } ${ classes } overflow-auto` }>
             { children }
         </section>
     )
