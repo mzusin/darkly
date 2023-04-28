@@ -1,12 +1,14 @@
 {
   "name": "darkly",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Dark React Starter Template + UI Kit",
   "type": "module",
-  "main": "./dist/darkly.template-1.js",
-  "module": "./dist/darkly.template-1.js",
+  "main": "./dist/darkly.min.js",
+  "module": "./dist/darkly.min.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "core:build": "node run/core/index.js",
+    "core:watch": "node run/core/index.js -- watch",
     "template-1:build": "node run/template-1/index.js",
     "template-1:watch": "node run/template-1/index.js -- watch",
     "eslint": "eslint ./src/**",
