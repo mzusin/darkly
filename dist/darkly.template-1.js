@@ -1,6 +1,6 @@
 /* 
 Darkly - Dark React Starter Template + UI Kit
-Version: 1.0.10
+Version: 1.0.11
 Author: Miriam Zusin     
 Contact: miriam.zusin@gmail.com
 Documentation: https://github.com/mzusin/darkly
@@ -24441,7 +24441,7 @@ var Panel = (props) => {
     "section",
     {
       onClick,
-      className: `${slideOnMobile ? "darkly-slide-m-panel" : "hidden"} xl:block xl:static w-80 max-w-full h-screen bg-slate-800 ${classes || ""}`
+      className: `${slideOnMobile ? "darkly-slide-m-panel" : "hidden"} xl:flex flex-col xl:static w-80 max-w-full h-screen bg-slate-800 ${classes || ""}`
     },
     children
   );

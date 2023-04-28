@@ -480,6 +480,9 @@ video {
 .gap-2 {
   gap: .5rem;
 }
+.overflow-auto {
+  overflow: auto;
+}
 .overflow-hidden {
   overflow: hidden;
 }

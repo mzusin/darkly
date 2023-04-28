@@ -17,7 +17,7 @@ export const Panel = (props: IPanel) => {
     return (
         <section
             onClick={ onClick }
-            className={ `${ slideOnMobile ? 'darkly-slide-m-panel' : 'hidden' } xl:block xl:static w-80 max-w-full h-screen bg-slate-800 ${ classes || '' }` }>
+            className={ `${ slideOnMobile ? 'darkly-slide-m-panel' : 'hidden' } xl:flex flex-col xl:static w-80 max-w-full h-screen bg-slate-800 ${ classes || '' }` }>
             { children }
         </section>
     )

@@ -139,7 +139,13 @@ declare module 'darkly' {
     }
     export const Panel: (props: IPanel) => JSX.Element;
 
-    export const PanelSection: () => JSX.Element;
+    export interface IPanelSection {
+        children?: React.ReactNode;
+        classes?: string;
+        fullHeight?: boolean;
+        scrollable?: boolean;
+    }
+    export const PanelSection: (props: IPanelSection) => JSX.Element;
 
     export interface IPanelTitle {
         classes?: string;

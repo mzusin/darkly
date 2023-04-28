@@ -1,6 +1,6 @@
 {
   "name": "darkly",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Dark React Starter Template + UI Kit",
   "type": "module",
   "main": "./dist/darkly.min.js",

@@ -308,6 +308,13 @@ Dark React Starter Template + UI Kit.
     classes?: string;
     children?: React.ReactNode;
   }
+  
+  export interface IPanelSection {
+    children?: React.ReactNode;
+    classes?: string;
+    fullHeight?: boolean;
+    scrollable?: boolean;
+  }
   ```
 
   ```tsx
@@ -317,6 +324,10 @@ Dark React Starter Template + UI Kit.
           <CloseMobileMenuButton />
       </PanelTitle>
       <HSplitter />
+  
+      <PanelSection>
+  
+      </PanelSection>
   
       ...
   </Panel>
