@@ -33,6 +33,7 @@ Dark React Starter Template + UI Kit.
    export interface ITopBar {
        children?: React.ReactNode;
        classes?: string;
+       style?: CSSProperties;
    }
    ```
  
@@ -44,6 +45,7 @@ Dark React Starter Template + UI Kit.
    export interface IBottomBar {
        children?: React.ReactNode;
        classes?: string;
+       style?: CSSProperties;  
    }
    ```
   
@@ -57,6 +59,7 @@ Dark React Starter Template + UI Kit.
    export interface IStretchBox {
        children?: React.ReactNode;
        classes?: string;
+       style?: CSSProperties;  
    }
    ```
 
@@ -77,6 +80,7 @@ Dark React Starter Template + UI Kit.
   export interface IButton {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
       type?: EButtonType;
       onClick?: Function;
   }
@@ -92,6 +96,7 @@ Dark React Starter Template + UI Kit.
   ```ts
   export interface IHSplitter {
       classes?: string;
+      style?: CSSProperties;  
   }
   ```
   
@@ -106,11 +111,13 @@ Dark React Starter Template + UI Kit.
   export interface IButtonsGroup {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
   }
 
   export interface IButtonsGroupButton {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
       title?: string;
       selected?: boolean;
       onClick?: Function;
@@ -139,12 +146,14 @@ Dark React Starter Template + UI Kit.
   export interface IIconRadioButtonGroup {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;
   }
   
   export interface IIconRadioButton {
     groupName: string;
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;  
     title?: string;
     checked?: boolean;
     onChange?: Function;
@@ -184,6 +193,7 @@ Dark React Starter Template + UI Kit.
       setColor?: Function;
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
   }
   ```
 
@@ -199,6 +209,7 @@ Dark React Starter Template + UI Kit.
   export interface INumberTextBox {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
       width?: string|number;
   
       min?: number | string;
@@ -225,6 +236,7 @@ Dark React Starter Template + UI Kit.
   export interface IFramedImage {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
       width?: string|number;
       height?: string|number;
   }
@@ -241,11 +253,13 @@ Dark React Starter Template + UI Kit.
   export interface IVIconsMenu {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
   }
   
   export interface IVIconsMenuButton {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;  
     title?: string;
     selected?: boolean;
     onClick?: Function;
@@ -255,6 +269,7 @@ Dark React Starter Template + UI Kit.
     href?: string;
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;  
     title?: string;
   }
   ```
@@ -286,10 +301,12 @@ Dark React Starter Template + UI Kit.
   ```ts
   export interface ICloseMobileMenuButton {
       classes?: string;
+      style?: CSSProperties;  
   }
   
   export interface IHamburgerButton {
-    classes?: string;
+      classes?: string;
+      style?: CSSProperties;  
   }
   ```
 
@@ -301,17 +318,20 @@ Dark React Starter Template + UI Kit.
   export interface IPanel {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
       slideOnMobile?: boolean;
   }
   
   export interface IPanelTitle {
     classes?: string;
+    style?: CSSProperties;  
     children?: React.ReactNode;
   }
   
   export interface IPanelSection {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;  
     fullHeight?: boolean;
     scrollable?: boolean;
   }
@@ -340,6 +360,7 @@ Dark React Starter Template + UI Kit.
   export interface ISideBar {
       children?: React.ReactNode;
       classes?: string;
+      style?: CSSProperties;  
   }
   ```
   

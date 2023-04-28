@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 export interface IButtonsGroupButton {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;
     title?: string;
     selected?: boolean;
     onClick?: Function;
 }
 
 export const ButtonsGroupButton = (props: IButtonsGroupButton) => {
-    const { children, classes, title, selected, onClick } = props;
+    const { children, classes, title, selected, onClick, style } = props;
 
     const selectedClasses = selected ? 'bg-sky-800' : 'bg-slate-900';
 
@@ -17,6 +18,7 @@ export const ButtonsGroupButton = (props: IButtonsGroupButton) => {
         <button
             type="button"
             title={ title }
+            style={ style }
             onClick={ () => {
                 if(typeof onClick !== 'function') return;
                 onClick();

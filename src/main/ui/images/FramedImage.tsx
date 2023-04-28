@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 export interface IFramedImage {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;
     width?: string|number;
     height?: string|number;
 }
@@ -10,9 +11,10 @@ export interface IFramedImage {
 export const FramedImage = (props: IFramedImage) => {
     const { children, classes, width, height } = props;
 
-    const style = {
+    const style: CSSProperties = {
         width,
         height,
+        ...props.style,
     };
 
     return (

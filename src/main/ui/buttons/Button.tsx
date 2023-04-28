@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 export enum EButtonType {
     Primary = 1,
@@ -10,6 +10,7 @@ export enum EButtonType {
 export interface IButton {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;
     type?: EButtonType;
     onClick?: Function;
 }
@@ -39,7 +40,7 @@ const getButtonClasses = (type?: EButtonType) => {
 };
 
 export const Button = (props: IButton) => {
-    const { children, classes, type, onClick } = props;
+    const { children, classes, type, onClick, style } = props;
 
     const onClickHandler = () => {
         if(typeof onClick !== 'function') return;
@@ -50,6 +51,7 @@ export const Button = (props: IButton) => {
         <button
             type="button"
             onClick={ onClickHandler }
+            style={ style }
             className={ `${ getButtonClasses(type) } ${ classes || '' }` }>
             { children }
         </button>

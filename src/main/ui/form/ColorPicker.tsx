@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { CSSProperties, useEffect, useRef } from 'react';
 import 'toolcool-color-picker';
 // import ToolCoolColorPicker from 'toolcool-color-picker';
 
@@ -17,10 +17,11 @@ export interface IColorPicker {
     setColor?: Function;
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;
 }
 
 export const ColorPicker = (props: IColorPicker) => {
-    const { color, setColor, children, classes } = props;
+    const { color, setColor, children, classes, style } = props;
 
     const colorPickerRef = useRef<HTMLElement>();
 
@@ -42,7 +43,7 @@ export const ColorPicker = (props: IColorPicker) => {
     }, []);
 
     return (
-        <section className={ `flex items-center justify-between ${ classes || '' }` } >
+        <section className={ `flex items-center justify-between ${ classes || '' }` } style={ style }>
             <div>
                 { children }
             </div>

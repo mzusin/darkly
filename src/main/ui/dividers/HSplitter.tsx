@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 export interface IHSplitter {
     classes?: string;
+    style?: CSSProperties;
 }
 
 export const HSplitter = (props: IHSplitter) => {
 
-    const { classes } = props;
+    const { classes, style } = props;
 
     return (
-        <section className={ `w-full h-1.5 ${ classes || '' }` }>
+        <section className={ `w-full h-1.5 ${ classes || '' }` } style={ style }>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                 <defs>
                     <pattern id="svg-stripes-pattern-8711" width="100%" height="3" x="0" y="0" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">

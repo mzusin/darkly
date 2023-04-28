@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { closeMobileMenu } from '../../../domain/mobile-menu-provider';
 
 export interface ICloseMobileMenuButton {
     classes?: string;
+    style?: CSSProperties;
 }
 
 export const CloseMobileMenuButton = (props: ICloseMobileMenuButton) => {
 
-    const { classes } = props;
+    const { classes, style } = props;
 
     return (
         <button
             type="button"
             onClick={ closeMobileMenu }
+            style={ style }
             className={ `xl:hidden absolute right-3 top-3 cursor-pointer ${ classes || '' }` }>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

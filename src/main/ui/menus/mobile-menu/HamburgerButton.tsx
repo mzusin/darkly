@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { CSSProperties, useEffect } from 'react';
 import { closeMobileMenu, toggleMobileMenu } from '../../../domain/mobile-menu-provider';
 
 export interface IHamburgerButton {
     classes?: string;
+    style?: CSSProperties;
 }
 
 export const HamburgerButton = (props: IHamburgerButton) => {
-    const { classes } = props;
+    const { classes, style } = props;
 
     useEffect(() => {
         document.addEventListener('click', closeMobileMenu);
@@ -20,6 +21,7 @@ export const HamburgerButton = (props: IHamburgerButton) => {
         <button
             type="button"
             onClick={ toggleMobileMenu }
+            style={ style }
             className={ `block xl:hidden justify-center items-center w-full px-4 py-3 ${ classes || '' }` }>
 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round"

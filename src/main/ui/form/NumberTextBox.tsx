@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { InputNumber } from 'mz-react-input-number';
 
 export interface INumberTextBox {
     children?: React.ReactNode;
     classes?: string;
+    style?: CSSProperties;
     width?: string|number;
 
     min?: number | string;
@@ -21,6 +22,7 @@ export const NumberTextBox = (props: INumberTextBox) => {
 
     const style = {
         width,
+        ...props.style
     };
 
     return (
