@@ -7,6 +7,7 @@ const watch = args.length > 1 && args[1].trim().toLowerCase() === 'watch';
 
 settings.entryPoints = ['./src/main/index.ts'];
 settings.outfile = './dist/darkly.min.js';
+settings.external = ['react', 'react-dom'];
 
 if(watch){
     // ------------- watch ---------------
