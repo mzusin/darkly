@@ -1,8 +1,10 @@
 {
   "name": "darkly",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Dark React Starter Template + UI Kit",
   "type": "module",
+  "main": "./dist/darkly.template-1.js",
+  "module": "./dist/darkly.template-1.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "template-1:build": "node run/template-1/index.js",
