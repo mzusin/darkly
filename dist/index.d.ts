@@ -86,6 +86,7 @@ declare module 'darkly' {
         children?: React.ReactNode;
         classes?: string;
         style?: CSSProperties;
+        popupPosition?: string;
     }
     export const ColorPicker: (props: IColorPicker) => JSX.Element;
 

@@ -18,10 +18,11 @@ export interface IColorPicker {
     children?: React.ReactNode;
     classes?: string;
     style?: CSSProperties;
+    popupPosition?: string;
 }
 
 export const ColorPicker = (props: IColorPicker) => {
-    const { color, setColor, children, classes, style } = props;
+    const { color, setColor, children, classes, style, popupPosition } = props;
 
     const colorPickerRef = useRef<HTMLElement>();
 
@@ -50,6 +51,7 @@ export const ColorPicker = (props: IColorPicker) => {
             <div>
                 <toolcool-color-picker
                     color={ color }
+                    popup-position={ popupPosition }
                     ref={ colorPickerRef }
                 />
             </div>

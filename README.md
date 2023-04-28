@@ -194,6 +194,7 @@ Dark React Starter Template + UI Kit.
       children?: React.ReactNode;
       classes?: string;
       style?: CSSProperties;  
+      popupPosition?: string;
   }
   ```
 
