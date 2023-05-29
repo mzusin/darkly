@@ -44,7 +44,7 @@ export const ColorPicker = (props: IColorPicker) => {
         return () => {
             colorPicker?.removeEventListener('change', onColorChange);
         };
-    }, []);
+    }, [setColor]);
 
     return (
         <section className={ `flex items-center justify-between ${ classes || '' }` } style={ style }>
